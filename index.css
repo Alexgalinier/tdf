@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: "got";
+    src: url("font/got.ttf")
+}
+@font-face {
+    font-family: "magik";
+    src: url("font/magik.TTF")
+}
+
+body {
+    background: lightgray;
+    font-family: sans-serif;
+}
+
+.sheet {
+    background: rgb(180,180,180);
+    box-shadow: 0 0 5px black;
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sheet.no-bg {
+    background: white;
+}
+
+.sheet.no-bg .bg {
+    display: none;
+}
+
+.sheet.no-bg .ruban {
+    display: none;
+}
+
+.inner-sheet {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+}
+
+#switch-blason {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.bg {
+    filter: grayscale(100%) invert(100%) brightness(80%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.ruban {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.ruban img {
+    width: 85%;
+    height: 140px;
+    margin-bottom: -104px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -36px;
+    opacity: .7;
+}
+
+.au, .crep, .la, .justice, .hurle {
+    position: absolute;
+    font-family: "magik";
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+    color: #424242;
+    display: block;
+}
+
+.au {
+    left: 200px;
+    bottom: 44px;
+    transform: rotate(-4deg);
+}
+
+.crep {
+    left: 250px;
+    bottom: 22px;
+    transform: rotate(2deg);
+}
+
+.la {
+    left: 349px;
+    bottom: 9px;
+    transform: rotate(5deg);
+}
+
+.justice {
+    left: 386px;
+    bottom: 10px;
+    transform: rotate(4deg);
+}
+
+.hurle {
+    left: 450px;
+    bottom: 18px;
+}
+
+@media print {
+    .sheet {
+        margin: 0;
+    }
+
+    #switch-blason {
+        display: none;
+    }
+}
+
+/* ------------------
+    Recto
+ * ------------------ */
+
+.name {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 235px;
+    height: 90px;
+    display: table;
+    overflow: hidden;
+}
+
+.name-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-size: 40px;
+    font-family: "magik";
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    opacity: .9;
+    z-index: 1;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+table td {
+    border: 1px solid black;
+    background: white;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    font-family: "magik";
+}
+
+table tr:first-child td {
+    border-top: 2px solid black;
+}
+
+table tr td:first-child {
+    border-left: 2px solid black;
+}
+
+table tr td:last-child {
+    border-right: 2px solid black;
+}
+
+table tr:last-child td {
+    border-bottom: 2px solid black;
+}
+
+table tr.t-header td {
+    background: black;
+    color: lightgray;
+    padding: 1px;
+    font-size: 16px;
+}
+
+.house-exp {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 66%;
+}
+
+.house-exp td {
+    font-size: 14px;
+}
+
+.house-exp td:nth-child(3), .house-exp td:nth-child(4) {
+    width: 20%;
+}
+
+.skill-val {
+    position: absolute;
+    border: none;
+    background: none;
+    display: block;
+    width: 98px;
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+    font-family: "magik";
+}
+
+#agility { top: 150px; left: 2px; height: 74px; line-height: 74px; }
+#militar { top: 246px; left: 2px; height: 44px; line-height: 44px; }
+#athl    { top: 312px; left: 2px; height: 89px; line-height: 89px; }
+#know    { top: 423px; left: 2px; height: 44px; line-height: 44px; }
+#coc     { top: 489px; left: 2px; height: 134px; line-height: 132px; }
+#disc    { top: 645px; left: 2px; height: 29px; line-height: 29px; }
+#dress   { top: 696px; left: 2px; height: 59px; line-height: 59px; }
+#dup     { top: 777px; left: 2px; height: 59px; line-height: 59px; }
+#end     { top: 858px; left: 2px; height: 29px; line-height: 29px; }
+#ing     { top: 909px; left: 2px; height: 44px; line-height: 44px; }
+
+#lang    { top: 150px; left: 245px; height: 59px; line-height: 59px; }
+#larc    { top: 231px; left: 245px; height: 44px; line-height: 44px; }
+#pers    { top: 297px; left: 245px; height: 104px; line-height: 104px; }
+#heal    { top: 423px; left: 245px; height: 44px; line-height: 44px; }
+#status  { top: 489px; left: 245px; height: 59px; line-height: 59px; }
+#sur     { top: 570px; left: 245px; height: 59px; line-height: 59px; }
+#tir     { top: 651px; left: 245px; height: 59px; line-height: 59px; }
+#vig     { top: 732px; left: 245px; height: 29px; line-height: 29px; }
+#will    { top: 783px; left: 245px; height: 44px; line-height: 44px; }
+
+.skills {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 32%;
+}
+
+.skills-2 {
+    left: 34%;
+}
+
+.skills td {
+    font-size: 12px;
+    padding: 1px;
+}
+
+.skills .t-header td {
+    padding: 3px;
+    font-size: 20px;
+}
+
+.skill td {
+    font-size: 16px;
+    padding: 2px;
+}
+
+.skill td:nth-child(1) {
+    border-right: 1px solid white;
+}
+.skill td:nth-child(2) {
+    border-right: 1px solid white;
+}
+.skill td:nth-child(2), .skill td:nth-child(3) {
+    border-left: 1px solid white;
+}
+
+.ability td:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 6px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: black;
+}
+
+.stat-box .stat td {
+    font-size: 12px;
+    text-transform: none;
+    padding: 1px;
+}
+
+.stat-box .score td {
+    font-size: 17px;
+    padding: 5px;
+}
+
+.picture, .intrigue, .defense, .armor, .damage, .lesions, .blessures, .weapons {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 32%;
+}
+
+.intrigue {
+    top: 255px;
+}
+
+.defense {
+    top: 339px;
+}
+
+.armor {
+    top: 431px;
+}
+
+.damage {
+    top: 523px;
+}
+
+.lesions {
+    top: 627px;
+}
+
+.blessures {
+    top: 731px;
+}
+
+.weapons {
+    width: 66%;
+    top: 840px;
+}
+
+.weapons tr td {
+    padding: 6px;
+}
+
+.weapons tr.t-header td {
+    padding: 5px;
+}
+
+.weapons tr td:nth-child(1) {
+    width: 50%;
+}
+
+.weapons tr td:nth-child(2) {
+    width: 25%;
+}
+
+.picture td {
+    height: 140px;
+    font-size: 16px;
+}
+
+.intrigue td:nth-child(2), .defense td:nth-child(2) {
+    width: 32%;
+}
+
+
+/* --------------
+    Verso
+ * -------------- */
+
+.equipment td, .haut-fait td, .allies td, .enemis td, .richesse td {
+    padding: 2px;
+    font-size: 16px;
+}
+
+.equipment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49.5%;
+}
+
+.haut-fait {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    width: 24.25%;
+}
+
+.richesse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24.25%;
+}
+
+.allies {
+    position: absolute;
+    top: 178px;
+    right: 25%;
+    width: 24.25%;
+}
+
+.enemis {
+    position: absolute;
+    top: 178px;
+    right: 0;
+    width: 24.25%;
+}
+
+.richesse tr.t-header td {
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.richesse td {
+    text-align: left;
+    padding: 3px;
+}
+
+.richesse td:nth-child(2) {
+    width: 30%;
+}
+
+.richesse tr:last-child td:nth-child(2) {
+    padding: 7px;
+}
+
+.rules-combat ul,
+.rules-combat ol,
+.rules-intrigue ul,
+.rules-intrigue ol {
+    padding-left: 20px;
+}
+
+.rules-combat ul li,
+.rules-combat ol li,
+.rules-intrigue ul li,
+.rules-intrigue ol li {
+    padding: 2px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.rules-combat h2,
+.rules-intrigue h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.rules-combat table tr td,
+.rules-intrigue table tr td {
+    font-size: 14px;
+    padding: 2px 3px;
+}
+
+.rules-combat table tr td:nth-child(3),
+.rules-intrigue table tr td:nth-child(3) {
+    text-align: left;
+}
+
+.rules-combat {
+    position: absolute;
+    top: 491px;
+    left: 0;
+    width: 49.5%;
+}
+
+.rules-intrigue {
+    position: absolute;
+    top: 376px;
+    right: 0;
+    width: 49.5%;
+}
+
+.rules-intrigue table {
+    width: 100%;
+}
+
+.rules-intrigue table td:nth-child(2),
+.rules-intrigue table td:nth-child(3),
+.rules-intrigue table td:nth-child(4) {
+    text-align: left;
+}

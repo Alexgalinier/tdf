@@ -1,0 +1,863 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="sheet">
+            <img src="images/blason_sans_fond.png" alt="" class="bg" />
+            <div class="inner-sheet">
+                <input type="button" id="switch-blason" value="Cacher Blason">
+
+                <input type="text" class="skill-val" id="agility" tabindex="9" />
+                <input type="text" class="skill-val" id="militar" tabindex="15"/>
+                <input type="text" class="skill-val" id="athl" tabindex="19" />
+                <input type="text" class="skill-val" id="know" tabindex="26" />
+                <input type="text" class="skill-val" id="coc" tabindex="30" />
+                <input type="text" class="skill-val" id="disc" tabindex="40" />
+                <input type="text" class="skill-val" id="dress" tabindex="42" />
+                <input type="text" class="skill-val" id="dup" tabindex="47" />
+                <input type="text" class="skill-val" id="end" tabindex="52" />
+                <input type="text" class="skill-val" id="ing" tabindex="55" />
+
+                <input type="text" class="skill-val" id="lang" tabindex="59" />
+                <input type="text" class="skill-val" id="larc" tabindex="60" />
+                <input type="text" class="skill-val" id="pers" tabindex="64" />
+                <input type="text" class="skill-val" id="heal" tabindex="72" />
+                <input type="text" class="skill-val" id="status" tabindex="76" />
+                <input type="text" class="skill-val" id="sur" tabindex="81" />
+                <input type="text" class="skill-val" id="tir" tabindex="86" />
+                <input type="text" class="skill-val" id="vig" tabindex="91" />
+                <input type="text" class="skill-val" id="will" tabindex="94" />
+
+                <div class="name">
+                    <div class="name-content" contenteditable="true">
+                        Godric Winkeller
+                    </div>
+                </div>
+
+                <table class="house-exp">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Maison</td>
+                            <td>Sexe</td>
+                            <td>Age</td>
+                            <td>Archétype</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="1">&nbsp;</td>
+                            <td tabindex="2">&nbsp;</td>
+                            <td tabindex="3">&nbsp;</td>
+                            <td tabindex="4">&nbsp;</td>
+                        </tr>
+                        <tr class="t-header">
+                            <td>Points de destinée</td>
+                            <td>Gloire</td>
+                            <td>XP</td>
+                            <td>XP Totale</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="5">&nbsp;</td>
+                            <td tabindex="6">&nbsp;</td>
+                            <td tabindex="7">&nbsp;</td>
+                            <td tabindex="8">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="skills">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Compétences</td><td>Spécialité</td><td>Score</td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- AGILITE          -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Agilité</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Acrobatie</td><td tabindex="10"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Contorsion</td><td tabindex="11"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Equilibre</td><td tabindex="12"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Esquiv</td><td tabindex="13"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Vivacité</td><td tabindex="14"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- ART MILITAIRE    -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Art Militaire</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Commandement</td><td tabindex="16"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Stratégie</td><td tabindex="17"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Tactique</td><td tabindex="18"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Athlétisme       -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Athlétisme</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Course</td><td tabindex="20"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Escalade</td><td tabindex="21"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Force</td><td tabindex="22"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Jet</td><td tabindex="23"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Natation</td><td tabindex="24"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Saut</td><td tabindex="25"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Connaissances    -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Connaissances</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>De la rue</td><td tabindex="27"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Education</td><td tabindex="28"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Recherche</td><td tabindex="29"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Corps à corps       -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Corps à corps</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Arme d'Hast</td><td tabindex="31"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Bouclier</td><td tabindex="32"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Casse tête</td><td tabindex="33"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Escrime</td><td tabindex="34"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Hache</td><td tabindex="35"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Lames courtes</td><td tabindex="36"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Lames longues</td><td tabindex="37"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Lance</td><td tabindex="38"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Rixe</td><td tabindex="39"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Discrétion       -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Discrétion</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Caméléon</td><td tabindex="40"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Furtivité</td><td tabindex="41"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Dressage         -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Dressage</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Charme</td><td tabindex="43"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Conduite</td><td tabindex="44"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Equitation</td><td tabindex="45"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Exercice</td><td tabindex="46"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Duperie         -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Duperie</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Bluff</td><td tabindex="48"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Comédie</td><td tabindex="49"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Déguisement</td><td tabindex="50"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Triche</td><td tabindex="51"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Endurance        -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Endurance</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Résilience</td><td tabindex="53"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Vigueur</td><td tabindex="54"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Ingéniosité        -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Ingéniosité</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Décryptage</td><td tabindex="56"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Logique</td><td tabindex="57"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Mémoire</td><td tabindex="58"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="skills skills-2">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Compétences</td><td>Spécialité</td><td>Score</td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Langues          -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Langues</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>&nbsp;</td><td></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Larcin           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Larcin</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Crochetage</td><td tabindex="61"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Passe-passe</td><td tabindex="62"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Vol</td><td tabindex="63"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Persuasion       -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Persuasion</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Charmer</td><td tabindex="65"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Convaincre</td><td tabindex="66"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Inciter</td><td tabindex="67"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Intimider</td><td tabindex="68"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Marchander</td><td tabindex="69"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Persifler</td><td tabindex="70"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Séduire</td><td tabindex="71"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Soins           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Soins</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Blessures</td><td tabindex="73"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Diagnostique</td><td tabindex="74"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Infection</td><td tabindex="75"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Statut           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Statut</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Bienséance</td><td tabindex="77"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Intendance</td><td tabindex="78"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Réputation</td><td tabindex="79"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Tournoi</td><td tabindex="80"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Survie           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Survie</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Chasse</td><td tabindex="82"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Fourageur</td><td tabindex="83"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Orientation</td><td tabindex="84"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Pistage</td><td tabindex="85"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Tir           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Tir</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Arbalète</td><td tabindex="87"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Arc</td><td tabindex="88"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Jet</td><td tabindex="89"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Siège</td><td tabindex="90"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Vigilance           -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Vigilance</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Empathie</td><td tabindex="92"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Observation</td><td tabindex="93"></td>
+                        </tr>
+
+                        <!-- ---------------- -->
+                        <!-- Volonté          -->
+                        <!-- ---------------- -->
+                        <tr class="skill">
+                            <td>Volonté</td><td></td><td></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Coordination</td><td tabindex="95"></td>
+                        </tr>
+                        <tr class="ability">
+                            <td></td><td>Courage</td><td tabindex="96"></td>
+                        </tr>
+                        <tr>
+                            <td></td><td>Dévouement</td><td tabindex="97"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="picture">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box intrigue">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Défense d'intrigue</td>
+                            <td>Sang-Froid</td>
+                        </tr>
+                        <tr class="stat">
+                            <td>Vigilance + Ingéniosité + Statut</td>
+                            <td>Volonté x3</td>
+                        </tr>
+                        <tr class="Score">
+                            <td id="def-intrigue" tabindex="98">&nbsp;</td>
+                            <td id="cold-blood" tabindex="99">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box defense">
+                    <tbody>
+                    <tr class="t-header">
+                        <td>Défense de combat</td>
+                        <td>Santé</td>
+                    </tr>
+                    <tr class="stat">
+                        <td>Agilité + Athlétisme + Vigilance <br/> - Bonus Défensif - Malus d'Armure</td>
+                        <td>Endurance x3</td>
+                    </tr>
+                    <tr class="Score">
+                        <td id="def-combat" tabindex="100">&nbsp;</td>
+                        <td id="sante" tabindex="101">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box armor">
+                    <tbody>
+                    <tr class="t-header">
+                        <td>Valeur d'Armure</td>
+                        <td>Malus d'Armure</td>
+                    </tr>
+                    <tr class="Score">
+                        <td tabindex="102">&nbsp;</td>
+                        <td id="malus-armure" tabindex="103">&nbsp;</td>
+                    </tr>
+                    <tr class="Score">
+                        <td style="text-align: left" colspan="2">
+                            Armure:
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box damage">
+                    <tbody>
+                    <tr class="t-header">
+                        <td>Dégâts</td>
+                    </tr>
+                    <tr class="stat">
+                        <td>Pas de malus, inconscience à 0</td>
+                    </tr>
+                    <tr class="Score">
+                        <td id="damage">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <br/>
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box lesions">
+                    <tbody>
+                    <tr class="t-header">
+                        <td>Lésions</td>
+                    </tr>
+                    <tr class="stat">
+                        <td>-1 aux tests par Lésions</td>
+                    </tr>
+                    <tr class="Score">
+                        <td id="wounds">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <br/>
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="stat-box blessures">
+                    <tbody>
+                    <tr class="t-header">
+                        <td>Blessures</td>
+                    </tr>
+                    <tr class="stat">
+                        <td>-1D aux tests par Blessure,<br />Mort si Blessures = Endurance</td>
+                    </tr>
+                    <tr class="Score">
+                        <td id="injuries">
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                            <br/>
+                            <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="weapons">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Type</td>
+                            <td>Dégâts</td>
+                            <td>Dés de test</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="ruban">
+                    <span class="au">Au</span> <span class="crep">Crépuscule,</span> <span class="la">La</span> <span class="justice">Justice</span> <span class="hurle">Hurle</span></h2>
+                    <img src="images/ruban.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sheet">
+            <div class="inner-sheet">
+                <img src="images/blason_sans_fond.png" alt="" class="bg" />
+                <table class="equipment">
+                    <tr class="t-header">
+                        <td colspan="2">Equipement</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+
+                <table class="haut-fait">
+                    <tr class="t-header">
+                        <td>Haut faits</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+
+                <table class="allies">
+                    <tr class="t-header">
+                        <td>Alliés</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+
+                <table class="enemis">
+                    <tr class="t-header">
+                        <td>Enemis</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+
+                <table class="richesse">
+                    <tr class="t-header">
+                        <td colspan="2">Richesse</td>
+                    </tr>
+                    <tr><td>Dragon d'Or</td><td></td></tr>
+                    <tr><td>Lune d'Argent</td><td></td></tr>
+                    <tr><td>Cerf d'Argent</td><td></td></tr>
+                    <tr><td>Etoile de Cuivre</td><td></td></tr>
+                    <tr><td>Liard de Cuivre</td><td></td></tr>
+                    <tr><td>Sous de Cuivre</td><td></td></tr>
+                </table>
+
+                <table class="rules-combat">
+                    <tr class="t-header">
+                        <td>Combat</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>Terrain (Décrit par Meujeuh!)</li>
+                                <li>Détection (Test de Furtivité contre Vigilance passive: Vigilance x4)</li>
+                                <li>Initiative (Test de Vivacité, si égalité: au meilleur score de Vivacité)</li>
+                                <li>Actions (1 majeure "M" ou 2 mineures "m")
+                                    <table>
+                                        <tr>
+                                            <td>Attaque standard</td><td>m</td><td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attaque répartie</td><td>M</td><td>Répartie les dés de test et bonus par cible</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attaque à 2 armes</td><td>M</td><td>Ajoute dégâts arme Secondaire</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attaque combinée</td><td>M</td><td>Dégâts Secondaire chaques cibles</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attaque montée</td><td>-</td><td>Voir livre</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Désarconner</td><td>M</td><td>Voir livre</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Immobiliser</td><td>M</td><td>Voir livre</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charge</td><td>M</td><td>Déplacement x2, -1D test, +2 dégâts</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Assister</td><td>m</td><td>Moitié du rang de la compétence à l'allié</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reprendre souffle</td><td>M</td><td>Test Endu, soigne 1 dégât par degré</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Intéragir</td><td>m</td><td>Ouvrir une porte, sortir sa bite...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Se déplacer</td><td>m</td><td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sprinter</td><td>M</td><td>4x le déplacement</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tomber/Se relever</td><td>m</td><td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Passer</td><td>M</td><td>+2B à un test au prochain tour</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Utiliser compétence</td><td>-</td><td>voir MJ</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ol>
+
+                            <h2>Dégâts subis</h2>
+                            <ul>
+                                <li>Cocher une case de Lésions annule 1 point de dégâts de l'attaque</li>
+                                <li>Cocher une case de Blessure annule tous les dégâts de l'attaque</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="rules-intrigue">
+                    <tr class="t-header">
+                        <td>Intrigue</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>Objectif (Amitié, Renseignement, Service ou Tromperie)</li>
+                                <li>Humeur
+                                    <table>
+                                        <tr>
+                                            <td>Affectueuse</td><td>VH 1</td><td>Duperie -2</td><td>Persuasions +5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Amicale</td><td>VH 2</td><td>Duperie -1</td><td>Persuasions +3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aimable</td><td>VH 3</td><td>Duperie +0</td><td>Persuasions +1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Indifférente</td><td>VH 4</td><td>Duperie +0</td><td>Persuasions +0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Antipathique</td><td>VH 5</td><td>Duperie +1</td><td>Persuasions -2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inamicale</td><td>VH 6</td><td>Duperie +2</td><td>Persuasions -4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Malveillante</td><td>VH 7</td><td>Duperie +3</td><td>Persuasions -6</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>Initiative (Test de Réputation)</li>
+                                <li>Choix technique
+                                    <table>
+                                        <tr class="t-header">
+                                            <td>Nom</td><td>Influence</td><td>En Persusasion</td><td>En Duperie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charmer</td><td>Rang Persuasion</td><td>Charmer</td><td>Comédie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Convaincre</td><td>Rang Volonté</td><td>Convaincre</td><td>Comédie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inciter</td><td>Rang Ingéniosité</td><td>Inciter</td><td>Bluff</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Intimider</td><td>Rang Volonté</td><td>Intimider</td><td>Bluff ou Comédie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marchander</td><td>Rang Ingéniosité</td><td>Marchander</td><td>Bluff</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Persifler</td><td>Rang Vigilance</td><td>Persifler</td><td>Bluff</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Séduire</td><td>Rang Persuasion</td><td>Séduire</td><td>Bluff</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>Roleplay en accord avec la technique puis 1 action
+                                    <table>
+                                        <tr>
+                                            <td>Assister</td><td>Test Persuasion (9) Moitié Rang Persuasion à l'allié</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Réfléchir</td><td>Passe le tour, +2B au prochain jet</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Embobiner</td><td>Test Persuasion v Volonté passive, cible perd Ingé en déf</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Influencer</td><td>Test technique choisie v Déf, Dégâts Influence</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manipuler</td><td>Test Persuasion v Volonté passive, choix technique cible</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Calmer</td><td>Test Persuasion (12) Soigne du Rang, +1 par degré</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comprendre</td><td>Test Vigilance v Duperie passive, +1D pour l'intrigue</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rempart</td><td>Test Statut v Volonté passive, humeur cible monte de 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Se replier</td><td>Test dévouement, remplace la déf</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="ruban">
+                    <span class="au">Au</span> <span class="crep">Crépuscule,</span> <span class="la">La</span> <span class="justice">Justice</span> <span class="hurle">Hurle</span></h2>
+                    <img src="images/ruban.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
