@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: "got";
-    src: url("font/got.ttf")
+    src: url("../font/got.ttf")
 }
 @font-face {
     font-family: "magik";
-    src: url("font/magik.TTF")
+    src: url("../font/magik.TTF")
 }
 
 body {
@@ -67,7 +67,7 @@ body {
 
 .ruban {
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 0;
     right: 0;
     z-index: 0;
@@ -139,12 +139,13 @@ body {
 
 .name {
     position: absolute;
-    left: 0;
-    top: -5px;
-    width: 235px;
-    height: 90px;
+    left: 80px;
+    top: -20px;
+    width: 390px;
+    height: 50px;
     display: table;
     overflow: hidden;
+    text-align: left;
 }
 
 .name-content {
@@ -153,7 +154,8 @@ body {
     color: black;
     font-size: 40px;
     font-family: "magik";
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
     font-weight: bold;
 }
 
@@ -203,8 +205,8 @@ table tr.t-header td {
 .house-exp {
     position: absolute;
     right: 0;
-    top: -5px;
-    width: 66%;
+    top: 127px;
+    width: 32%;
 }
 
 .house-exp td {
@@ -227,17 +229,21 @@ table tr.t-header td {
     font-family: "magik";
 }
 
-#agility { top: 150px; left: 2px; height: 74px; line-height: 74px; }
-#militar { top: 246px; left: 2px; height: 44px; line-height: 44px; }
-#athl    { top: 312px; left: 2px; height: 89px; line-height: 89px; }
-#know    { top: 423px; left: 2px; height: 44px; line-height: 44px; }
-#coc     { top: 489px; left: 2px; height: 134px; line-height: 132px; }
-#disc    { top: 645px; left: 2px; height: 29px; line-height: 29px; }
-#dress   { top: 696px; left: 2px; height: 59px; line-height: 59px; }
-#dup     { top: 777px; left: 2px; height: 59px; line-height: 59px; }
-#end     { top: 858px; left: 2px; height: 29px; line-height: 29px; }
-#ing     { top: 909px; left: 2px; height: 44px; line-height: 44px; }
+.skill-adjustement {
+    height:22px;
+}
 
+#agility { top: 85px;  left: 2px;height: 74px;line-height: 74px;}
+#militar { top: 181px; left: 2px; height: 44px; line-height: 44px; }
+#athl    { top: 247px; left: 2px; height: 89px; line-height: 89px; }
+#know    { top: 358px; left: 2px; height: 44px; line-height: 44px; }
+#coc     { top: 425px; left: 2px; height: 134px; line-height: 132px; }
+#disc    { top: 582px; left: 2px; height: 29px; line-height: 29px; }
+#dress   { top: 635px; left: 2px; height: 59px; line-height: 59px; }
+#dup     { top: 717px; left: 2px; height: 59px; line-height: 59px; }
+#end     { top: 798px; left: 2px; height: 29px; line-height: 29px; }
+
+#ing     { top: 85px;  left: 245px; height: 44px; line-height: 44px; }
 #lang    { top: 150px; left: 245px; height: 59px; line-height: 59px; }
 #larc    { top: 231px; left: 245px; height: 44px; line-height: 44px; }
 #pers    { top: 297px; left: 245px; height: 104px; line-height: 104px; }
@@ -251,7 +257,7 @@ table tr.t-header td {
 .skills {
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 35px;
     width: 32%;
 }
 
@@ -321,36 +327,39 @@ input[type="checkbox"]:checked {
 .picture, .intrigue, .defense, .armor, .damage, .lesions, .blessures, .weapons {
     position: absolute;
     right: 0;
-    top: 100px;
     width: 32%;
 }
 
+.picture {
+    top: -15px;
+}
+
 .intrigue {
-    top: 255px;
+    top: 290px;
 }
 
 .defense {
-    top: 339px;
+    top: 367px;
 }
 
 .armor {
-    top: 431px;
+    top: 455px;
 }
 
 .damage {
-    top: 523px;
+    top: 545px;
 }
 
 .lesions {
-    top: 627px;
+    top: 640px;
 }
 
 .blessures {
-    top: 731px;
+    top: 734px;
 }
 
 .weapons {
-    width: 66%;
+    width: 100%;
     top: 840px;
 }
 
@@ -363,15 +372,23 @@ input[type="checkbox"]:checked {
 }
 
 .weapons tr td:nth-child(1) {
-    width: 50%;
+    width: 15%;
 }
 
 .weapons tr td:nth-child(2) {
-    width: 25%;
+    width: 15%;
+}
+
+.weapons tr td:nth-child(3) {
+    width: 15%;
+}
+
+.weapons tr td:nth-child(4) {
+    width: 15%;
 }
 
 .picture td {
-    height: 140px;
+    height: 130px;
     font-size: 16px;
 }
 
