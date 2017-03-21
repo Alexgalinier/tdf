@@ -74,6 +74,19 @@ function updateSante() {
 	})
 }
 
+$(".weapon-select").each(function() {
+	var weapons = Data.get('weapons')
+	var elem = $(this)
+
+	// Add empty first option
+	elem.append($("<option></option>").attr("value", "").text(""))
+
+	weapons.forEach(function(weapon) {
+		elem.append(
+			$("<option></option>").attr("value", weapon.id).text(weapon.name)
+		)
+	})
+})
 
 // -------------------
 // Private functions

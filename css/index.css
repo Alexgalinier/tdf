@@ -199,11 +199,20 @@ table tr.t-header td {
     font-size: 16px;
 }
 
+table td select {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: "magik";
+}
+
 .house-exp {
     position: absolute;
     right: 0;
-    top: 193px;
-    width: 33%;
+    top: 191px;
+    width: 242px;
 }
 
 .house-exp td {
@@ -219,7 +228,7 @@ table tr.t-header td {
     border: none;
     background: none;
     display: block;
-    width: 98px;
+    width: 105px;
     z-index: 2;
     text-align: center;
     font-size: 25px;
@@ -230,41 +239,36 @@ table tr.t-header td {
     height:22px;
 }
 
-#agility { top: 115px; left: 2px; height: 74px; line-height: 74px;}
-#militar { top: 211px; left: 2px; height: 44px; line-height: 44px; }
-#athl    { top: 277px; left: 2px; height: 89px; line-height: 89px; }
-#know    { top: 389px; left: 2px; height: 44px; line-height: 44px; }
-#coc     { top: 456px; left: 2px; height: 134px; line-height: 132px; }
-#disc    { top: 613px; left: 2px; height: 29px; line-height: 29px; }
-#dress   { top: 666px; left: 2px; height: 59px; line-height: 59px; }
-#dup     { top: 748px; left: 2px; height: 59px; line-height: 59px; }
-#end     { top: 829px; left: 2px; height: 29px; line-height: 29px; }
+#agility { top: 118px; left: 2px; height: 74px; line-height: 74px;}
+#militar { top: 214px; left: 2px; height: 44px; line-height: 44px; }
+#athl    { top: 280px; left: 2px; height: 89px; line-height: 89px; }
+#know    { top: 392px; left: 2px; height: 44px; line-height: 44px; }
+#coc     { top: 459px; left: 2px; height: 134px; line-height: 132px; }
+#disc    { top: 616px; left: 2px; height: 29px; line-height: 29px; }
+#dress   { top: 668px; left: 2px; height: 59px; line-height: 59px; }
+#dup     { top: 750px; left: 2px; height: 59px; line-height: 59px; }
+#end     { top: 832px; left: 2px; height: 29px; line-height: 29px; }
 
-#ing     { top: 116px;  left: 230px; height: 44px; line-height: 44px; }
-#lang    { top: 181px; left: 230px; height: 59px; line-height: 59px; }
-#larc    { top: 262px; left: 230px; height: 44px; line-height: 44px; }
-#pers    { top: 327px; left: 230px; height: 104px; line-height: 104px; }
-#heal    { top: 454px; left: 230px; height: 44px; line-height: 44px; }
-#status  { top: 520px; left: 230px; height: 59px; line-height: 59px; }
-#sur     { top: 601px; left: 230px; height: 59px; line-height: 59px; }
-#tir     { top: 682px; left: 230px; height: 59px; line-height: 59px; }
-#vig     { top: 763px; left: 230px; height: 29px; line-height: 29px; }
-#will    { top: 814px; left: 230px; height: 44px; line-height: 44px; }
+#ing     { top: 118px; left: 238px; height: 44px; line-height: 44px; }
+#lang    { top: 184px; left: 238px; height: 59px; line-height: 59px; }
+#larc    { top: 265px; left: 238px; height: 44px; line-height: 44px; }
+#pers    { top: 331px; left: 238px; height: 104px; line-height: 104px; }
+#heal    { top: 457px; left: 238px; height: 44px; line-height: 44px; }
+#status  { top: 523px; left: 238px; height: 59px; line-height: 59px; }
+#sur     { top: 604px; left: 238px; height: 59px; line-height: 59px; }
+#tir     { top: 685px; left: 238px; height: 59px; line-height: 59px; }
+#vig     { top: 766px; left: 238px; height: 29px; line-height: 29px; }
+#will    { top: 817px; left: 238px; height: 44px; line-height: 44px; }
 
 .skills {
     position: absolute;
     left: 0;
-    top: 72px;
+    top: 74px;
     width: 32%;
 }
 
-.skills-1 {
-    width: 30%;
-}
-
 .skills-2 {
-    left: 32%;
-    width: 33%;
+    left: 33%;
 }
 
 .skills td {
@@ -329,7 +333,7 @@ input[type="checkbox"]:checked {
 .picture, .intrigue, .defense, .armor, .damage, .lesions, .blessures, .weapons {
     position: absolute;
     right: 0;
-    width: 33%;
+    width: 242px;
 }
 
 .picture {
@@ -337,23 +341,23 @@ input[type="checkbox"]:checked {
 }
 
 .intrigue {
-    top: 334px;
+    top: 333px;
 }
 
 .defense {
-    top: 405px;
+    top: 406px;
 }
 
 .armor {
-    top: 488px;
+    top: 490px;
 }
 
 .damage {
-    top: 585px;
+    top: 578px;
 }
 
 .lesions {
-    top: 675px;
+    top: 672px;
 }
 
 .blessures {
@@ -362,7 +366,7 @@ input[type="checkbox"]:checked {
 
 .weapons {
     width: 100%;
-    top: 870px;
+    top: 871px;
 }
 
 .weapons td {

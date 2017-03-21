@@ -564,80 +564,6 @@
                     </tbody>
                 </table>
 
-                <!-- Liste déroulante Arme -->
-                <datalist id="weapons_list">
-                    <!-- Arbalètes -->
-                    <option value="Arbalète">Arbalètes</option>
-                    <option value="Arbalète Légère">Arbalètes</option>
-                    <option value="Arbalète Lourde">Arbalètes</option>
-                    <option value="Arbalète Myrienne">Arbalètes</option>
-                    <!-- Arcs -->
-                    <option value="Arc Courbe">Arcs</option>
-                    <option value="Arc de Chasse">Arcs</option>
-                    <option value="Arc Long">Arcs</option>
-                    <!-- Armes d'Hast -->
-                    <option value="Hache D'Armes">Armes d'Hast</option>
-                    <option value="Hallebarde">Armes d'Hast</option>
-                    <option value="Outil de Paysan">Armes d'Hast</option>
-                    <!-- Boucliers -->
-                    <option value="Bouclier">Boucliers</option>
-                    <option value="Grand Bouclier">Boucliers</option>
-                    <option value="Pavois">Boucliers</option>
-                    <option value="Targe">Boucliers</option>
-                    <!-- Casse-tête -->
-                    <option value="Bâton">Casse-tête</option>
-                    <option value="Bec de Corbin">Casse-tête</option>
-                    <option value="Fléau">Casse-tête</option>
-                    <option value="Fléau D'armes">Casse-tête</option>
-                    <option value="Trique/Gourdin">Casse-tête</option>
-                    <option value="Maillet">Casse-tête</option>
-                    <option value="Marteau de Guerre">Casse-tête</option>
-                    <option value="Masse d'Armes">Casse-tête</option>
-                    <option value="Morgenstern">Casse-tête</option>
-                    <!-- Escrime -->
-                    <option value="Epée Braavienne">Escrime</option>
-                    <option value="Epée Courte">Escrime</option>
-                    <option value="Dague Main Gauche">Escrime</option>
-                    <!-- Haches -->
-                    <option value="Cognée">Haches</option>
-                    <option value="Hache de bataille">Haches</option>
-                    <option value="Hachette">Haches</option>
-                    <option value="Hache Longue">Haches</option>
-                    <option value="Pioche">Haches</option>
-                    <!-- Jet -->
-                    <option value="Couteau de jet">Jet</option>
-                    <option value="Filet">Jet</option>
-                    <option value="Foëne de jet">Jet</option>
-                    <option value="Fronde">Jet</option>
-                    <option value="Hachette de jet">Jet</option>
-                    <option value="Javeline">Jet</option>
-                    <option value="Lance de Jet">Jet</option>
-                    <option value="Trident de jet">Jet</option>
-                    <!-- Lames Courtes -->
-                    <option value="Dague">Lames Courtes</option>
-                    <option value="Poignard">Lames Courtes</option>
-                    <option value="Stylet">Lames Courtes</option>
-                    <option value="Couteau">Lames Courtes</option>
-                    <!-- Lames Longues -->
-                    <option value="Arakh">Lames Longues</option>
-                    <option value="Epée Bâtarde">Lames Longues</option>
-                    <option value="Epée Longue">Lames Longues</option>
-                    <option value="Espadon">Lames Longues</option>
-                    <!-- Lances -->
-                    <option value="Epieu">Lances</option>
-                    <option value="Foëne">Lances</option>
-                    <option value="Lance">Lances</option>
-                    <option value="Lance de Joute">Lances</option>
-                    <option value="Pique">Lances</option>
-                    <option value="Lance de guerre">Lances</option>
-                    <option value="Trident">Lances</option>
-                    <!-- Rixe -->
-                    <option value="Fouet">Rixe</option>
-                    <option value="Gantelet">Rixe</option>
-                    <option value="Poing">Rixe</option>
-                    <option value="Arme Improvisée">Rixe</option>
-                </datalist>
-
                 <!-- Liste déroulante Qualité -->
                 <datalist id="qualities_list">
                     <option value="Mauvaise">-1D CAC ou Tir</option>
@@ -682,9 +608,7 @@
                         </tr>
                         <!-- 1ere ligne -->
                         <tr>
-                            <td class="td-not-editable">
-                                <input list="weapons_list" type="text" id="weapons_choice1" class="combobox combobox--weapons"/>
-                            </td>
+                            <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice1" class="combobox combobox--qualities"/></td>
                             <td class="td-not-editable">&nbsp;</td>
@@ -692,7 +616,7 @@
                         </tr>
                         <!-- 2eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><input list="weapons_list" type="text" id="weapons_choice2 " class="combobox combobox--weapons"/></td>
+                            <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice2" class="combobox combobox--qualities"/></td>
                             <td class="td-not-editable">&nbsp;</td>
@@ -700,7 +624,7 @@
                         </tr>
                         <!-- 3eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><input list="weapons_list" type="text" id="weapons_choice3" class="combobox combobox--weapons"/></td>
+                            <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice3" class="combobox combobox--qualities"/></td>
                             <td class="td-not-editable">&nbsp;</td>
@@ -708,7 +632,7 @@
                         </tr>
                         <!-- 4eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><input list="weapons_list" type="text" id="weapons_choice4" class="combobox combobox--weapons"/></td>
+                            <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice4" class="combobox combobox--qualities"/></td>
                             <td class="td-not-editable">&nbsp;</td>
@@ -985,8 +909,15 @@
             </div>
         </div>
 
+        <!-- External-->
         <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+
+        <!-- Data -->
+        <script src="js/model/abstract-model.js"></script>
+        <script src="js/model/weapon.js"></script>
+        <script src="js/data.js"></script>
+        <script src="data/weapons.js"></script>
+
         <script src="js/index.js"></script>
-        <script src="js/comboboxes.js"></script>
     </body>
 </html>
