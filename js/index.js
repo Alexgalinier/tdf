@@ -12,7 +12,7 @@ $('#switch-blason').click(function () {
 	} else {
 		$(this).val("Cacher Blason")
 	}
-})
+});
 
 $("#vig").on("keyup", updateDefIntrig);
 $("#ing").on("keyup", updateDefIntrig);
