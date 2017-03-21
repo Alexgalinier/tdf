@@ -362,23 +362,39 @@ input[type="checkbox"]:checked {
 
 .weapons {
     width: 100%;
-    top: 865px;
+    top: 870px;
+}
+
+.weapons td {
+    line-height: 20px;
+    font-size: 16px;
+    padding:0;
 }
 
 .weapons tr td:nth-child(1) {
-    width: 15%;
+    width: 25%;
 }
 
 .weapons tr td:nth-child(2) {
-    width: 15%;
+    width: 13%;
 }
 
 .weapons tr td:nth-child(3) {
-    width: 15%;
+    width: 17%;
 }
 
 .weapons tr td:nth-child(4) {
-    width: 15%;
+    width: 10%;
+}
+
+.weapons tr td:nth-child(5) {
+    width: 35%;
+}
+
+/*this will set the width of the comboboxes equal to its container td*/
+.weapons td > input[type='text']
+{
+    padding-left:5px;
 }
 
 .picture td {
@@ -386,9 +402,22 @@ input[type="checkbox"]:checked {
     font-size: 16px;
 }
 
+.armor table {
+    padding: -5px;
+}
+
 .armor td {
     line-height: 13px;
     font-size: 10px;
+    padding:0;
+}
+
+/*this will set the width of the comboboxes equal to its container td*/
+.armor td > input[type='text']
+{
+    width: 105%;
+    margin: -5px;
+    padding-left:5px;
 }
 
 .intrigue td:nth-child(2), .defense td:nth-child(2) {
