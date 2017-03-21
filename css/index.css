@@ -75,11 +75,10 @@ body {
 
 .ruban img {
     width: 85%;
-    height: 140px;
-    margin-bottom: -104px;
+    height: 70px;
     display: block;
     margin: 0 auto;
-    margin-bottom: -36px;
+    margin-bottom: -5px;
     opacity: .7;
 }
 
@@ -96,31 +95,31 @@ body {
 
 .au {
     left: 200px;
-    bottom: 44px;
+    bottom: 40px;
     transform: rotate(-4deg);
 }
 
 .crep {
     left: 250px;
-    bottom: 22px;
+    bottom: 18px;
     transform: rotate(2deg);
 }
 
 .la {
     left: 349px;
-    bottom: 9px;
+    bottom: 5px;
     transform: rotate(5deg);
 }
 
 .justice {
     left: 386px;
-    bottom: 10px;
+    bottom: 6px;
     transform: rotate(4deg);
 }
 
 .hurle {
     left: 450px;
-    bottom: 18px;
+    bottom: 14px;
 }
 
 @media print {
@@ -361,14 +360,6 @@ input[type="checkbox"]:checked {
 .weapons {
     width: 100%;
     top: 840px;
-}
-
-.weapons tr td {
-    padding: 6px;
-}
-
-.weapons tr.t-header td {
-    padding: 5px;
 }
 
 .weapons tr td:nth-child(1) {
