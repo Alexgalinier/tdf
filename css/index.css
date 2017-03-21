@@ -338,15 +338,15 @@ input[type="checkbox"]:checked {
 }
 
 .defense {
-    top: 367px;
+    top: 365px;
 }
 
 .armor {
-    top: 455px;
+    top: 449px;
 }
 
 .damage {
-    top: 545px;
+    top: 546px;
 }
 
 .lesions {
@@ -381,6 +381,11 @@ input[type="checkbox"]:checked {
 .picture td {
     height: 130px;
     font-size: 16px;
+}
+
+.armor td {
+    line-height: 13px;
+    font-size: 10px;
 }
 
 .intrigue td:nth-child(2), .defense td:nth-child(2) {
