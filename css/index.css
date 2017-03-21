@@ -205,7 +205,7 @@ table tr.t-header td {
     position: absolute;
     right: 0;
     top: 127px;
-    width: 32%;
+    width: 33%;
 }
 
 .house-exp td {
@@ -326,7 +326,7 @@ input[type="checkbox"]:checked {
 .picture, .intrigue, .defense, .armor, .damage, .lesions, .blessures, .weapons {
     position: absolute;
     right: 0;
-    width: 32%;
+    width: 33%;
 }
 
 .picture {
