@@ -487,16 +487,18 @@
                 <table class="stat-box armor">
                     <tbody>
                     <tr class="t-header">
-                        <td>Valeur d'Armure</td>
-                        <td>Malus d'Armure</td>
+                        <td>Valeur</td>
+                        <td>Malus</td>
+                        <td>Encombrement</td>
                     </tr>
                     <tr class="Score">
-                        <td tabindex="102">&nbsp;</td>
+                        <td id="valeur-armure" tabindex="102">&nbsp;</td>
                         <td id="malus-armure" tabindex="103">&nbsp;</td>
+                        <td id="encombrement-armure" tabindex="104">&nbsp;</td>
                     </tr>
                     <tr class="Score">
-                        <td style="text-align: left" colspan="2">
-                            Armure:
+                        <td style="text-align: left" colspan="3">
+                            <input list="armors_list" type="text" id="armors_choice"/>
                         </td>
                     </tr>
                     </tbody>
@@ -562,6 +564,7 @@
                     </tbody>
                 </table>
 
+                <!-- Liste déroulante Arme -->
                 <datalist id="weapons_list">
                     <!-- Arbalètes -->
                     <option value="Arbalète">Arbalètes</option>
@@ -635,6 +638,7 @@
                     <option value="Arme Improvisée">Rixe</option>
                 </datalist>
 
+                <!-- Liste déroulante Qualité -->
                 <datalist id="qualities_list">
                     <option value="Mauvaise">-1D CAC ou Tir</option>
                     <option value="Normale">Aucun Bonus/Malus</option>
@@ -642,6 +646,25 @@
                     <option value="Extraordinaire">+1 CAC ou Tir + 1 Dégâts</option>
                     <option value="Obsidienne">(Dagues et Flèches) Perforante+1 - Fragile</option>
                     <option value="Os-Dragon">Perforante+1 Dégâts +1</option>
+                </datalist>
+
+                <!-- Liste déroulante Armure -->
+                <datalist id="armors_list">
+                    <option value="Vêtements">Val(0) Mal(0) Enc(0)</option>
+                    <option value="Robe, Chasuble">Val(1) Mal(0) Enc(1)</option>
+                    <option value="Jaque">Val(1) Mal(0) Enc(0)</option>
+                    <option value="Armure de Cuir Souple">Val(2) Mal(1) Enc(0)</option>
+                    <option value="Armure de Cuir Rigide">Val(3) Mal(2) Enc(0)</option>
+                    <option value="Armure en Bois ou D'os">Val(4) Mal(3) Enc(1)</option>
+                    <option value="Armure de Mailles">Val(4) Mal(2) Enc(1)</option>
+                    <option value="Armure de Peaux">Val(5) Mal(3) Enc(3)</option>
+                    <option value="Cotte de Mailles">Val(5) Mal(3) Enc(2)</option>
+                    <option value="Cuirasse">Val(5) Mal(2) Enc(3)</option>
+                    <option value="Armure à Ecailles">Val(6) Mal(3) Enc(2)</option>
+                    <option value="Ecrevisse">Val(7) Mal(3) Enc(3)</option>
+                    <option value="Brigandine">Val(8) Mal(4) Enc(3)</option>
+                    <option value="Harnois">Val(9) Mal(5) Enc(3)</option>
+                    <option value="Harnois Complet">Val(10) Mal(6) Enc(3)</option>
                 </datalist>
 
                 <!-- ---------------- -->
