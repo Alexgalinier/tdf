@@ -1,5 +1,7 @@
 $("td").each(function (index, cell) {
-	$(cell).attr('contenteditable', 'true')
+	if(cell.className !== 'td-not-editable') {
+		$(cell).attr('contenteditable', 'true')
+	}
 });
 
 $('#switch-blason').click(function () {
