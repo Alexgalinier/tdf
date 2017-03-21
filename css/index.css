@@ -202,7 +202,7 @@ table tr.t-header td {
 .house-exp {
     position: absolute;
     right: 0;
-    top: 175px;
+    top: 193px;
     width: 33%;
 }
 
@@ -230,26 +230,26 @@ table tr.t-header td {
     height:22px;
 }
 
-#agility { top: 85px;  left: 2px;height: 74px;line-height: 74px;}
-#militar { top: 181px; left: 2px; height: 44px; line-height: 44px; }
-#athl    { top: 247px; left: 2px; height: 89px; line-height: 89px; }
-#know    { top: 358px; left: 2px; height: 44px; line-height: 44px; }
-#coc     { top: 425px; left: 2px; height: 134px; line-height: 132px; }
-#disc    { top: 582px; left: 2px; height: 29px; line-height: 29px; }
-#dress   { top: 635px; left: 2px; height: 59px; line-height: 59px; }
-#dup     { top: 717px; left: 2px; height: 59px; line-height: 59px; }
-#end     { top: 798px; left: 2px; height: 29px; line-height: 29px; }
+#agility { top: 115px; left: 2px; height: 74px; line-height: 74px;}
+#militar { top: 211px; left: 2px; height: 44px; line-height: 44px; }
+#athl    { top: 277px; left: 2px; height: 89px; line-height: 89px; }
+#know    { top: 389px; left: 2px; height: 44px; line-height: 44px; }
+#coc     { top: 456px; left: 2px; height: 134px; line-height: 132px; }
+#disc    { top: 613px; left: 2px; height: 29px; line-height: 29px; }
+#dress   { top: 666px; left: 2px; height: 59px; line-height: 59px; }
+#dup     { top: 748px; left: 2px; height: 59px; line-height: 59px; }
+#end     { top: 829px; left: 2px; height: 29px; line-height: 29px; }
 
-#ing     { top: 85px;  left: 245px; height: 44px; line-height: 44px; }
-#lang    { top: 150px; left: 245px; height: 59px; line-height: 59px; }
-#larc    { top: 231px; left: 245px; height: 44px; line-height: 44px; }
-#pers    { top: 297px; left: 245px; height: 104px; line-height: 104px; }
-#heal    { top: 423px; left: 245px; height: 44px; line-height: 44px; }
-#status  { top: 489px; left: 245px; height: 59px; line-height: 59px; }
-#sur     { top: 570px; left: 245px; height: 59px; line-height: 59px; }
-#tir     { top: 651px; left: 245px; height: 59px; line-height: 59px; }
-#vig     { top: 732px; left: 245px; height: 29px; line-height: 29px; }
-#will    { top: 783px; left: 245px; height: 44px; line-height: 44px; }
+#ing     { top: 116px;  left: 230px; height: 44px; line-height: 44px; }
+#lang    { top: 181px; left: 230px; height: 59px; line-height: 59px; }
+#larc    { top: 262px; left: 230px; height: 44px; line-height: 44px; }
+#pers    { top: 327px; left: 230px; height: 104px; line-height: 104px; }
+#heal    { top: 454px; left: 230px; height: 44px; line-height: 44px; }
+#status  { top: 520px; left: 230px; height: 59px; line-height: 59px; }
+#sur     { top: 601px; left: 230px; height: 59px; line-height: 59px; }
+#tir     { top: 682px; left: 230px; height: 59px; line-height: 59px; }
+#vig     { top: 763px; left: 230px; height: 29px; line-height: 29px; }
+#will    { top: 814px; left: 230px; height: 44px; line-height: 44px; }
 
 .skills {
     position: absolute;
@@ -258,8 +258,13 @@ table tr.t-header td {
     width: 32%;
 }
 
+.skills-1 {
+    width: 30%;
+}
+
 .skills-2 {
-    left: 34%;
+    left: 32%;
+    width: 33%;
 }
 
 .skills td {
@@ -332,23 +337,23 @@ input[type="checkbox"]:checked {
 }
 
 .intrigue {
-    top: 320px;
+    top: 334px;
 }
 
 .defense {
-    top: 394px;
+    top: 405px;
 }
 
 .armor {
-    top: 480px;
+    top: 488px;
 }
 
 .damage {
-    top: 581px;
+    top: 585px;
 }
 
 .lesions {
-    top: 673px;
+    top: 675px;
 }
 
 .blessures {
@@ -377,7 +382,7 @@ input[type="checkbox"]:checked {
 }
 
 .picture td {
-    height: 177px;
+    height: 197px;
     font-size: 16px;
 }
 
