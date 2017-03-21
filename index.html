@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <div class="sheet">
@@ -35,36 +35,48 @@
                     </div>
                 </div>
 
+                <table class="picture">
+                    <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+
                 <table class="house-exp">
                     <tbody>
                         <tr class="t-header">
                             <td>Maison</td>
                             <td>Sexe</td>
                             <td>Age</td>
-                            <td>Archétype</td>
                         </tr>
                         <tr>
                             <td tabindex="1">&nbsp;</td>
                             <td tabindex="2">&nbsp;</td>
                             <td tabindex="3">&nbsp;</td>
-                            <td tabindex="4">&nbsp;</td>
                         </tr>
                         <tr class="t-header">
-                            <td>Points de destinée</td>
-                            <td>Gloire</td>
+                            <td>Archétype</td>
                             <td>XP</td>
                             <td>XP Totale</td>
                         </tr>
                         <tr>
+                            <td tabindex="4">&nbsp;</td>
                             <td tabindex="5">&nbsp;</td>
                             <td tabindex="6">&nbsp;</td>
+                        </tr>
+                        <tr class="t-header">
+                            <td>Points de Destinée</td>
+                            <td colspan="3">Points de Gloire</td>
+                        </tr>
+                        <tr>
                             <td tabindex="7">&nbsp;</td>
-                            <td tabindex="8">&nbsp;</td>
+                            <td tabindex="8" colspan="3">&nbsp;</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <table class="skills">
+                <table class="skills skills-1">
                     <tbody>
                         <tr class="t-header">
                             <td>Compétences</td><td>Spécialité</td><td>Score</td>
@@ -136,7 +148,7 @@
                         <!-- ---------------- -->
                         <!-- Connaissances    -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Connaissances</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -152,7 +164,7 @@
                         <!-- ---------------- -->
                         <!-- Corps à corps       -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Corps à corps</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -186,7 +198,7 @@
                         <!-- ---------------- -->
                         <!-- Discrétion       -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Discrétion</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -199,7 +211,7 @@
                         <!-- ---------------- -->
                         <!-- Dressage         -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Dressage</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -218,7 +230,7 @@
                         <!-- ---------------- -->
                         <!-- Duperie         -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Duperie</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -237,7 +249,7 @@
                         <!-- ---------------- -->
                         <!-- Endurance        -->
                         <!-- ---------------- -->
-                        <tr class="skill">
+                        <tr class="skill skill-adjustement">
                             <td>Endurance</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
@@ -245,6 +257,14 @@
                         </tr>
                         <tr>
                             <td></td><td>Vigueur</td><td tabindex="54"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="skills skills-2">
+                    <tbody>
+                        <tr class="t-header">
+                            <td>Compétences</td><td>Spécialité</td><td>Score</td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -261,20 +281,6 @@
                         </tr>
                         <tr>
                             <td></td><td>Mémoire</td><td tabindex="58"></td>
-                        </tr>
-                        <tr>
-                            <td></td><td>&nbsp;</td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td>&nbsp;</td><td></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="skills skills-2">
-                    <tbody>
-                        <tr class="t-header">
-                            <td>Compétences</td><td>Spécialité</td><td>Score</td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -444,14 +450,6 @@
                     </tbody>
                 </table>
 
-                <table class="picture">
-                    <tbody>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-
                 <table class="stat-box intrigue">
                     <tbody>
                         <tr class="t-header">
@@ -564,27 +562,38 @@
                     </tbody>
                 </table>
 
+                <!-- ---------------- -->
+                <!--      Armes       -->
+                <!-- ---------------- -->
                 <table class="weapons">
                     <tbody>
+                        <!-- Titres -->
                         <tr class="t-header">
-                            <td>Type</td>
+                            <td>Arme</td>
+                            <td>Spécialité</td>
+                            <td>Qualité</td>
                             <td>Dégâts</td>
-                            <td>Dés de test</td>
+                            <td>Attributs</td>
                         </tr>
+                        <!-- 1ere ligne -->
                         <tr>
-                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                         </tr>
+                        <!-- 2eme ligne -->
                         <tr>
-                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                         </tr>
+                        <!-- 3eme ligne -->
                         <tr>
-                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                         </tr>
+                        <!-- 4eme ligne -->
                         <tr>
-                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                         </tr>
+                        <!-- 5eme ligne -->
                         <tr>
-                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                         </tr>
                     </tbody>
                 </table>
@@ -858,6 +867,6 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
