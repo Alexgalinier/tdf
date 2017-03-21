@@ -138,8 +138,7 @@ body {
 
 .name {
     position: absolute;
-    left: 80px;
-    width: 390px;
+    width: 470px;
     height: 50px;
     display: table;
     overflow: hidden;
@@ -152,7 +151,7 @@ body {
     color: black;
     font-size: 40px;
     font-family: "magik";
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
     font-weight: bold;
 }
