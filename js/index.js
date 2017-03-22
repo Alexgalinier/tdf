@@ -87,10 +87,11 @@ $(".weapon-select").each(function() {
 		//Add opt-groups
 		if(!specialities.includes(weapon.group)){
 			elem.append(
-				$("<optgroup label="+weapon.group+">")
+				$("<optgroup>").attr("label", weapon.group)
 			);
 		}
 
+		//Add options
 		elem.append(
 			$("<option></option>").attr("value", weapon.id).text(weapon.name)
 		);
