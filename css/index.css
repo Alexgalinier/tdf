@@ -211,7 +211,7 @@ table td select {
 .house-exp {
     position: absolute;
     right: 0;
-    top: 191px;
+    top: 189px;
     width: 242px;
 }
 
@@ -341,27 +341,27 @@ input[type="checkbox"]:checked {
 }
 
 .intrigue {
-    top: 333px;
+    top: 329px;
 }
 
 .defense {
-    top: 406px;
+    top: 400px;
 }
 
 .armor {
-    top: 490px;
+    top: 483px;
 }
 
 .damage {
-    top: 578px;
+    top: 585px;
 }
 
 .lesions {
-    top: 672px;
+    top: 676px;
 }
 
 .blessures {
-    top: 765px;
+    top: 766.5px;
 }
 
 .weapons {
@@ -371,8 +371,7 @@ input[type="checkbox"]:checked {
 
 .weapons td {
     line-height: 20px;
-    font-size: 16px;
-    padding:0;
+    padding:1px;
 }
 
 .weapons tr td:nth-child(1) {
@@ -395,33 +394,9 @@ input[type="checkbox"]:checked {
     width: 35%;
 }
 
-/*this will set the width of the comboboxes equal to its container td*/
-.weapons td > input[type='text']
-{
-    padding-left:5px;
-}
-
 .picture td {
     height: 197px;
     font-size: 16px;
-}
-
-.armor table {
-    padding: -5px;
-}
-
-.armor td {
-    line-height: 13px;
-    font-size: 10px;
-    padding:0;
-}
-
-/*this will set the width of the comboboxes equal to its container td*/
-.armor td > input[type='text']
-{
-    width: 105%;
-    margin: -5px;
-    padding-left:5px;
 }
 
 .intrigue td:nth-child(2), .defense td:nth-child(2) {
