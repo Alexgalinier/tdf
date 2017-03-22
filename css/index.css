@@ -352,6 +352,10 @@ input[type="checkbox"]:checked {
     top: 483px;
 }
 
+.armor select {
+    height: 19px;
+}
+
 .damage {
     top: 585px;
 }
@@ -361,7 +365,7 @@ input[type="checkbox"]:checked {
 }
 
 .blessures {
-    top: 766.5px;
+    top: 767px;
 }
 
 .weapons {
@@ -401,6 +405,12 @@ input[type="checkbox"]:checked {
 
 .intrigue td:nth-child(2), .defense td:nth-child(2) {
     width: 32%;
+}
+
+.damage .checkers-row,
+.lesions .checkers-row,
+.blessures .checkers-row {
+    height: 18px;
 }
 
 
