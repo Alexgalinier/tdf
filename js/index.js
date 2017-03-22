@@ -114,7 +114,7 @@ $(".quality-select").each(function() {
 
 	qualities.forEach(function(quality) {
 		elem.append(
-			$("<option></option>").attr("value", quality.id).text(quality.name)
+			$("<option></option>").attr("value", quality.id).attr("title", quality.bonus).text(quality.name)
 		);
 	})
 });
@@ -129,7 +129,7 @@ $(".armor-select").each(function() {
 
 	armors.forEach(function(armor) {
 		elem.append(
-			$("<option></option>").attr("value", armor.id).text(armor.name)
+			$("<option></option>").attr("value", armor.id).attr("title", armor.bonus).text(armor.name)
 		);
 	})
 });
