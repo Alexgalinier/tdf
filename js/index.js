@@ -47,24 +47,24 @@ function updateDefCombat() {
 }
 
 function updateSante() {
-	var sante = v("end") * 3
+	var sante = v("end") * 3;
 
 	$('#sante').html(
 		sante
-	)
+	);
 
 	$("#damage").find("input").each(function(index) {
 		$(this).prop('checked', false);
 		if (index >= sante)
 			$(this).prop('checked', true);
-	})
+	});
 
 	$("#wounds").find("input").each(function(index) {
 		$(this).prop('checked', false);
 		if (index >= v("end")) {
 			$(this).prop('checked', true);
 		}
-	})
+	});
 
 	$("#injuries").find("input").each(function(index) {
 		$(this).prop('checked', false);
@@ -74,11 +74,33 @@ function updateSante() {
 	})
 }
 
+function updateWeaponRow(){
+	var weaponId = this.value;
+	var weapons = Data.get('weapons');
+
+	if(weapons[weaponId-1]) {
+		var weapon = new Weapon(weapons[weaponId-1]);
+		var trElement = this.parentElement.parentElement;
+		var tds = trElement.getElementsByTagName("td");
+
+		//Spécialité
+		$(tds[1]).html(weapon.getSpeciality());
+		//Dégats
+		$(tds[3]).html(weapon.getDamage());
+		//Attributs
+		$(tds[4]).html(weapon.getAttribute());
+	}
+
+}
+
 //Fill weapons select boxes
 $(".weapon-select").each(function() {
 	var weapons = Data.get('weapons');
 	var elem = $(this);
 	var specialities = [];
+
+	//On change update the weapon Row
+	elem.on("change", updateWeaponRow);
 
 	// Add empty first option
 	elem.append($("<option></option>").attr("value", "").text(""));
