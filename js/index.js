@@ -74,19 +74,65 @@ function updateSante() {
 	})
 }
 
+//Fill weapons select boxes
 $(".weapon-select").each(function() {
-	var weapons = Data.get('weapons')
-	var elem = $(this)
+	var weapons = Data.get('weapons');
+	var elem = $(this);
+	var specialities = [];
 
 	// Add empty first option
-	elem.append($("<option></option>").attr("value", "").text(""))
+	elem.append($("<option></option>").attr("value", "").text(""));
 
 	weapons.forEach(function(weapon) {
+		//Add opt-groups
+		if(!specialities.includes(weapon.group)){
+			elem.append(
+				$("<optgroup label="+weapon.group+">")
+			);
+		}
+
 		elem.append(
 			$("<option></option>").attr("value", weapon.id).text(weapon.name)
-		)
+		);
+
+		if(!specialities.includes(weapon.group)){
+			specialities.push(weapon.group);
+			elem.append(
+				$("</optgroup>")
+			);
+		}
 	})
-})
+});
+
+//Fill qualities select boxes
+$(".quality-select").each(function() {
+	var qualities = Data.get('qualities');
+	var elem = $(this);
+
+	// Add empty first option
+	elem.append($("<option></option>").attr("value", "").text(""));
+
+	qualities.forEach(function(quality) {
+		elem.append(
+			$("<option></option>").attr("value", quality.id).text(quality.name)
+		);
+	})
+});
+
+//Fill armors select box
+$(".armor-select").each(function() {
+	var armors = Data.get('armors');
+	var elem = $(this);
+
+	// Add empty first option
+	elem.append($("<option></option>").attr("value", "").text(""));
+
+	armors.forEach(function(armor) {
+		elem.append(
+			$("<option></option>").attr("value", armor.id).text(armor.name)
+		);
+	})
+});
 
 // -------------------
 // Private functions

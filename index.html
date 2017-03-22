@@ -498,7 +498,7 @@
                     </tr>
                     <tr class="Score">
                         <td style="text-align: left" colspan="3">
-                            <input list="armors_list" type="text" id="armors_choice" class="combobox combobox--armors"/>
+                            <select class="armor-select"></select>
                         </td>
                     </tr>
                     </tbody>
@@ -564,35 +564,6 @@
                     </tbody>
                 </table>
 
-                <!-- Liste déroulante Qualité -->
-                <datalist id="qualities_list">
-                    <option value="Mauvaise">-1D CAC ou Tir</option>
-                    <option value="Normale">Aucun Bonus/Malus</option>
-                    <option value="Supérieure">+1 CAC ou Tir</option>
-                    <option value="Extraordinaire">+1 CAC ou Tir + 1 Dégâts</option>
-                    <option value="Obsidienne">(Dagues et Flèches) Perforante+1 - Fragile</option>
-                    <option value="Os-Dragon">Perforante+1 Dégâts +1</option>
-                </datalist>
-
-                <!-- Liste déroulante Armure -->
-                <datalist id="armors_list">
-                    <option value="Vêtements">Val(0) Mal(0) Enc(0)</option>
-                    <option value="Robe, Chasuble">Val(1) Mal(0) Enc(1)</option>
-                    <option value="Jaque">Val(1) Mal(0) Enc(0)</option>
-                    <option value="Armure de Cuir Souple">Val(2) Mal(1) Enc(0)</option>
-                    <option value="Armure de Cuir Rigide">Val(3) Mal(2) Enc(0)</option>
-                    <option value="Armure en Bois ou D'os">Val(4) Mal(3) Enc(1)</option>
-                    <option value="Armure de Mailles">Val(4) Mal(2) Enc(1)</option>
-                    <option value="Armure de Peaux">Val(5) Mal(3) Enc(3)</option>
-                    <option value="Cotte de Mailles">Val(5) Mal(3) Enc(2)</option>
-                    <option value="Cuirasse">Val(5) Mal(2) Enc(3)</option>
-                    <option value="Armure à Ecailles">Val(6) Mal(3) Enc(2)</option>
-                    <option value="Ecrevisse">Val(7) Mal(3) Enc(3)</option>
-                    <option value="Brigandine">Val(8) Mal(4) Enc(3)</option>
-                    <option value="Harnois">Val(9) Mal(5) Enc(3)</option>
-                    <option value="Harnois Complet">Val(10) Mal(6) Enc(3)</option>
-                </datalist>
-
                 <!-- ---------------- -->
                 <!--      Armes       -->
                 <!-- ---------------- -->
@@ -610,7 +581,7 @@
                         <tr>
                             <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice1" class="combobox combobox--qualities"/></td>
+                            <td class="td-not-editable"><select class="quality-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable">&nbsp;</td>
                         </tr>
@@ -618,7 +589,7 @@
                         <tr>
                             <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice2" class="combobox combobox--qualities"/></td>
+                            <td class="td-not-editable"><select class="quality-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable">&nbsp;</td>
                         </tr>
@@ -626,7 +597,7 @@
                         <tr>
                             <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice3" class="combobox combobox--qualities"/></td>
+                            <td class="td-not-editable"><select class="quality-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable">&nbsp;</td>
                         </tr>
@@ -634,7 +605,7 @@
                         <tr>
                             <td class="td-not-editable"><select class="weapon-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><input list="qualities_list" type="text" id="qualities_choice4" class="combobox combobox--qualities"/></td>
+                            <td class="td-not-editable"><select class="quality-select"></select></td>
                             <td class="td-not-editable">&nbsp;</td>
                             <td class="td-not-editable">&nbsp;</td>
                         </tr>
@@ -912,11 +883,17 @@
         <!-- External-->
         <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
 
-        <!-- Data -->
+        <!-- Model -->
         <script src="js/model/abstract-model.js"></script>
         <script src="js/model/weapon.js"></script>
+        <script src="js/model/quality.js"></script>
+        <script src="js/model/armor.js"></script>
+
+        <!-- Data -->
         <script src="js/data.js"></script>
         <script src="data/weapons.js"></script>
+        <script src="data/qualities.js"></script>
+        <script src="data/armors.js"></script>
 
         <script src="js/index.js"></script>
     </body>
