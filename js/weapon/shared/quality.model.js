@@ -11,8 +11,7 @@ Quality.prototype = {
 		var weapon = _.find(Data.get('weapons'), (o) => o.id == weaponId);
 		var degats = weapon.calculateDamage();
 
-		if(this.bonus.deg > 0)
-		{
+		if(this.bonus.deg > 0) {
 			degats += this.bonus.deg;
 		}
 
@@ -24,8 +23,7 @@ Quality.prototype = {
 		var attributes = weapon.getAttribute();
 
 		// If weapon is perforante we modify Perf. attribute
-		if(weapon.hasPerforanteAttribute())
-		{
+		if(weapon.hasPerforanteAttribute()) {
 			var position = attributes.indexOf('Perf.');
 			var bonusPerfPosition = position+6; // Perf. + space = 6 chars
 			var bonusPerfCurrent = Number(attributes.charAt(bonusPerfPosition));
@@ -33,8 +31,7 @@ Quality.prototype = {
 			attributes = attributes.substr(0, bonusPerfPosition) + bonusFinal + attributes.substr(bonusPerfPosition + 1);
 		}
 		// If weapon is not perforante but quality has Perf. bonus, we add it
-		else if(this.bonus.perf > 0)
-		{
+		else if(this.bonus.perf > 0) {
 			attributes += ", Perf. "+this.bonus.perf;
 		}
 

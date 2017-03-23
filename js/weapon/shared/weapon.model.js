@@ -14,8 +14,7 @@ Weapon.prototype = {
 	calculateDamage : function (qualityId) {
 		var degats = 0;
 
-		if(qualityId)
-		{
+		if(qualityId) {
 			var quality = _.find(Data.get('qualities'), (o) => o.id == qualityId);
 			degats = quality.bonus.deg;
 		}
@@ -47,8 +46,7 @@ Weapon.prototype = {
 
 	getAttribute : function (qualityId) {
 		var attribute = this.attributs.label;
-		if(qualityId)
-		{
+		if(qualityId) {
 			var quality = _.find(Data.get('qualities'), (o) => o.id == qualityId);
 			attribute = quality.calculateAttribute(this.id);
 		}
