@@ -872,20 +872,25 @@
         </div>
 
         <!-- External-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
 
-        <!-- Model -->
-        <script src="js/model/abstract-model.js"></script>
-        <script src="js/model/weapon.js"></script>
-        <script src="js/model/quality.js"></script>
-        <script src="js/model/armor.js"></script>
+        <script src="js/index-to-refactor.js"></script>
 
-        <!-- Data -->
-        <script src="js/data.js"></script>
+        <!-- Shared -->
+        <script src="js/shared/model/abstract-model.js"></script>
+        <script src="js/shared/data.js"></script>
+
+        <!-- Weapon -->
+        <script src="js/weapon/shared/weapon.model.js"></script>
+        <script src="js/weapon/shared/quality.model.js"></script>
         <script src="data/weapons.js"></script>
         <script src="data/qualities.js"></script>
-        <script src="data/armors.js"></script>
+        <script src="js/weapon/weapon.js"></script>
 
-        <script src="js/index.js"></script>
+        <!-- Armor -->
+        <script src="js/armor/shared/armor.model.js"></script>
+        <script src="data/armors.js"></script>
+        <script src="js/armor/armor.js"></script>
     </body>
 </html>
