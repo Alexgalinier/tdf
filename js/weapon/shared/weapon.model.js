@@ -11,11 +11,17 @@ Weapon.prototype = {
 	},
 
 	// Calculate the damages of the weapon
-	getDamage : function () {
+	calculateDamage : function (qualityId) {
 		var degats = 0;
 
+		if(qualityId)
+		{
+			var quality = _.find(Data.get('qualities'), (o) => o.id == qualityId);
+			degats = quality.bonus.deg;
+		}
+
 		if(this.associatedComp.length === 0) {
-			return 0;
+			return degats;
 		}
 
 		if(this.associatedComp) {
@@ -39,8 +45,18 @@ Weapon.prototype = {
 		return degats;
 	},
 
-	getAttribute : function () {
-		return this.attributs;
+	getAttribute : function (qualityId) {
+		var attribute = this.attributs.label;
+		if(qualityId)
+		{
+			var quality = _.find(Data.get('qualities'), (o) => o.id == qualityId);
+			attribute = quality.calculateAttribute(this.id);
+		}
+		return attribute;
+	},
+
+	hasPerforanteAttribute : function () {
+		return this.attributs.isPerf === true;
 	}
 
 };
