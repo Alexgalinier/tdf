@@ -3,7 +3,7 @@ $(".weapon-select").each(function() {
 	var elem = $(this);
 
 	//On change update the weapon Row
-	elem.on("change", updateWeaponRow);
+	elem.on("change", updateFromWeapon);
 
 	// Add empty first option
 	elem.append(htmlOption('', ''));
@@ -23,24 +23,63 @@ $(".weapon-select").each(function() {
 $(".quality-select").each(function() {
 	var elem = $(this);
 
+	//On change update the weapon Row
+	elem.on("change", updateFromQuality);
+
 	// Add empty first option
 	elem.append(htmlOption('', ''));
 
 	_(Data.get('qualities'))
-		.map((quality) => htmlOption(quality.id, quality.name, quality.bonus))
+		.map((quality) => htmlOption(quality.id, quality.name, quality.title))
 		.each(appendIn(elem))
 });
 
-function updateWeaponRow(){
-	var weapon = _.find(Data.get('weapons'), (o) => o.id == this.value)
+function updateFromWeapon(){
+	var weapon = _.find(Data.get('weapons'), (o) => o.id == this.value);
+	var qualityValue = $(this).closest('tr').find('.quality-select').val();
 
 	if (weapon) {
 		$(this)
 			.closest('td')
 			.next('td').html(weapon.getSpeciality())
 			.next('td')
-			.next('td').html(weapon.getDamage())
+			.next('td').html(weapon.calculateDamage(qualityValue))
+			.next('td').html(weapon.getAttribute(qualityValue))
+	}
+	else{
+		$(this)
+			.closest('td')
+			.next('td').html('')
+			.next('td')
+			.next('td').html('')
+			.next('td').html('')
+	}
+}
+
+function updateFromQuality(){
+	var quality = _.find(Data.get('qualities'), (o) => o.id == this.value);
+	var weaponValue = $(this).closest('tr').find('.weapon-select').val();
+
+	if (quality && weaponValue) {
+		$(this)
+			.closest('td')
+			.next('td').html(quality.calculateDamage(weaponValue))
+			.next('td').html(quality.calculateAttribute(weaponValue))
+	}
+	else if (weaponValue) {
+		var weapon = _.find(Data.get('weapons'), (o) => o.id == weaponValue);
+		$(this)
+			.closest('td')
+			.next('td').html(weapon.calculateDamage())
 			.next('td').html(weapon.getAttribute())
+	}
+	else{
+		$(this)
+			.closest('td')
+			.prev('td').html('')
+			.next('td')
+			.next('td').html('')
+			.next('td').html('')
 	}
 }
 
