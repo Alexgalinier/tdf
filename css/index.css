@@ -376,26 +376,23 @@ input[type="checkbox"]:checked {
 .weapons td {
     line-height: 20px;
     padding:1px;
+    font-size: 14px;
 }
 
 .weapons tr td:nth-child(1) {
-    width: 25%;
+    width: 150px;
 }
 
 .weapons tr td:nth-child(2) {
-    width: 13%;
+    width: 90px;
 }
 
 .weapons tr td:nth-child(3) {
-    width: 17%;
+    width: 90px;
 }
 
 .weapons tr td:nth-child(4) {
-    width: 10%;
-}
-
-.weapons tr td:nth-child(5) {
-    width: 35%;
+    width: 50px;
 }
 
 .picture td {

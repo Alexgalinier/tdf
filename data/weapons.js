@@ -1,13 +1,13 @@
 Data.set('weapons', Weapon, [
 	// Arbalètes
-	{id: 1, name: "Arbalète", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100M, Perforante 1, Rechargement Mineur, Lente, Deux Mains"},
-	{id: 2, name: "Arbalète Légère", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100M, Rechargement Mineur, Lente"},
-	{id: 3, name: "Arbalète Lourde", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100M, Perforante 2, Rechargement Majeure, Lente, Deux Mains, Hargneuse"},
-	{id: 4, name: "Arbalète Myrienne", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100M, Perforante 1, Deux Mains, Rapide, Rechargement Mineur"},
+	{id: 1, name: "Arbalète", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100m, Perforante 1, Rechargement Mineur, Lente, Deux Mains"},
+	{id: 2, name: "Arbalète Légère", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100m, Rechargement Mineur, Lente"},
+	{id: 3, name: "Arbalète Lourde", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100m, Perforante 2, Rechargement Majeure, Lente, Deux Mains, Hargneuse"},
+	{id: 4, name: "Arbalète Myrienne", group:"Arbalètes", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100m, Perforante 1, Deux Mains, Rapide, Rechargement Mineur"},
 	// Arcs
-	{id: 5, name: "Arc Courbe", group:"Arcs", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100M, Puissante, Deux Mains"},
-	{id: 6, name: "Arc de Chasse", group:"Arcs", associatedComp:"agility", bonusBase:0, bonusSpe:"", attributs:"Portée Longue 100M, Deux Mains"},
-	{id: 7, name: "Arc Long", group:"Arcs", associatedComp:"agility", bonusBase:2, bonusSpe:"", attributs:"Portée Longue 100M, Perforante 1, Deux Mains, Incommode"},
+	{id: 5, name: "Arc Courbe", group:"Arcs", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Longue 100m, Puissante, Deux Mains"},
+	{id: 6, name: "Arc de Chasse", group:"Arcs", associatedComp:"agility", bonusBase:0, bonusSpe:"", attributs:"Portée Longue 100m, Deux Mains"},
+	{id: 7, name: "Arc Long", group:"Arcs", associatedComp:"agility", bonusBase:2, bonusSpe:"", attributs:"Portée Longue 100m, Perforante 1, Deux Mains, Incommode"},
 	// Armes d'Hast
 	{id: 8, name: "Hache D'Armes", group:"Armes d'Hast", associatedComp:"athl", bonusBase:3, bonusSpe:"", attributs:"Encombrante 1, Puissante, Allonge 2, Deux Mains, Incommode"},
 	{id: 9, name: "Hallebarde", group:"Armes d'Hast", associatedComp:"athl", bonusBase:3, bonusSpe:"", attributs:"Encombrante 1, Puissante, Allonge 2, Deux Mains"},
@@ -41,7 +41,7 @@ Data.set('weapons', Weapon, [
 	{id: 32, name: "Couteau de jet", group:"Jet", associatedComp:"agility", bonusBase:-1, bonusSpe:"", attributs:"Portée Courte 10M, Rapide"},
 	{id: 33, name: "Filet", group:"Jet", associatedComp:"", bonusBase:1, bonusSpe:"", attributs:"Portée Courte 10M, Empêtrement (pas de dégats)"},
 	{id: 34, name: "Foëne de jet", group:"Jet", associatedComp:"agility", bonusBase:1, bonusSpe:"", attributs:"Portée Courte 10M"},
-	{id: 35, name: "Fronde", group:"Jet", associatedComp:"athl", bonusBase:-1, bonusSpe:"", attributs:"Portée Longue 100M, Perforante 1, Rechargement Mineur, Lente, Deux Mains"},
+	{id: 35, name: "Fronde", group:"Jet", associatedComp:"athl", bonusBase:-1, bonusSpe:"", attributs:"Portée Longue 100m, Perforante 1, Rechargement Mineur, Lente, Deux Mains"},
 	{id: 36, name: "Hachette de jet", group:"Jet", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:"Portée Courte 10M"},
 	{id: 37, name: "Javeline", group:"Jet", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:"Portée Courte 10M"},
 	{id: 38, name: "Lance de Jet", group:"Jet", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:"Portée Courte 10M"},
