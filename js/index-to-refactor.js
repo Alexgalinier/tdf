@@ -76,7 +76,7 @@ function updateSante() {
 // Private functions
 // -------------------
 function toInt(val) {
-	var int = parseInt(val.trim(), 10)
+	var int = parseInt(val, 10)
 	return (isNaN(int)) ? 0 : int
 }
 
