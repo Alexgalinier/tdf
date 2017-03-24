@@ -8,9 +8,16 @@ $('#switch-blason').click(function () {
 	$('.sheet').toggleClass("no-bg");
 
 	if ($(this).val() == "Cacher Blason") {
-		$(this).val("Afficher Blason")
+		$(this).val("Afficher Blason");
+		$("#remove-picture-button").hide();
+		$("#input-choose-picture").hide();
+
 	} else {
-		$(this).val("Cacher Blason")
+		$(this).val("Cacher Blason");
+		$("#remove-picture-button").show();
+		if($("#input-show-picture").attr('src') == undefined){
+			$("#input-choose-picture").show();
+		}
 	}
 });
 
@@ -26,6 +33,8 @@ $("#vig").on("keyup", updateDefCombat);
 $("#malus-armure").on("keyup", updateDefCombat);
 
 $("#end").on("keyup", updateSante);
+
+updatePicture();
 
 function updateDefIntrig() {
 	$("#def-intrigue").html(
@@ -70,6 +79,11 @@ function updateSante() {
 			$(this).prop('checked', true);
 		}
 	})
+}
+
+function updatePicture(){
+	//showImage($("#input-choose-picture"),$("#input-show-picture"));
+	showImage(document.getElementById("input-choose-picture"),document.getElementById("input-show-picture"));
 }
 
 // -------------------
