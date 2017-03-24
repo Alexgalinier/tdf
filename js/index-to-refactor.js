@@ -27,6 +27,8 @@ $("#malus-armure").on("keyup", updateDefCombat);
 
 $("#end").on("keyup", updateSante);
 
+updatePicture();
+
 function updateDefIntrig() {
 	$("#def-intrigue").html(
 		v("vig") + v("ing") + v("status")
@@ -70,6 +72,11 @@ function updateSante() {
 			$(this).prop('checked', true);
 		}
 	})
+}
+
+function updatePicture(){
+	//showImage($("#input-choose-picture"),$("#input-show-picture"));
+	showImage(document.getElementById("input-choose-picture"),document.getElementById("input-show-picture"));
 }
 
 // -------------------
