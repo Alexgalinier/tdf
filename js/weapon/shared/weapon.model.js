@@ -35,7 +35,7 @@ Weapon.prototype = {
 		}
 
 		if(this.bonusSpe) {
-			var degatsSpeStr = $("#" + this.bonusSpe).val();
+			var degatsSpeStr = $("#" + this.bonusSpe).html();
 			if (degatsSpeStr) {
 				degats += Number(degatsSpeStr);
 			}
