@@ -9,7 +9,7 @@ Data.set('armors', Quality, [
 	{id: 8, name: "Armure de Peaux", val: 5, mal: 3, enc:3},
 	{id: 9, name: "Cotte de Mailles", val: 5, mal: 3, enc:2},
 	{id: 10, name: "Cuirasse", val: 5, mal: 2, enc:3},
-	{id: 11, name: "Armure à Ecailles", val: 6, mal: 3, enc:2},
+	{id: 11, name: "Armure à Écailles", val: 6, mal: 3, enc:2},
 	{id: 12, name: "Écrevisse", val: 7, mal: 3, enc:3},
 	{id: 13, name: "Brigandine", val: 8, mal: 4, enc:3},
 	{id: 14, name: "Harnois", val: 9, mal: 5, enc:3},

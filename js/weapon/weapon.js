@@ -37,7 +37,7 @@ $(".quality-select").each(function() {
 // Listen to some skills value changed
 $("#agility").bind("change", updateWeapons)
 $("#athl").bind("change", updateWeapons)
-$("#coc").bind("change", updateWeapons)
+$("#cac").bind("change", updateWeapons)
 $("#tir").bind("change", updateWeapons)
 // Listen to all spe for value changed
 $('.skills td:nth-child(3)').bind("DOMSubtreeModified", updateWeapons);
