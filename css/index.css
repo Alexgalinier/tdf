@@ -235,6 +235,10 @@ table td select {
     font-family: "magik";
 }
 
+.skill-val.skill2-val {
+    width: 94px;
+}
+
 .skill-adjustement {
     height:22px;
 }
