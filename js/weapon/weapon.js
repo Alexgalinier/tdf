@@ -118,15 +118,11 @@ function appendIn(elem) {
 function specialityToValue(weapon, qualityId) {
 	if (weapon) {
 		var spe = weapon.getSpeciality(),
-				speValue;
+				speValue,
+                skillValue;
 
-		if (spe == 'Jet') {
-			var cell = $('.skills td:nth-child(2):contains("' + spe + '")')[1]
-			speValue = toInt($(cell).next('td').html())
-		} else {
-			speValue = toInt($('.skills td:nth-child(2):contains("' + spe + '")').next('td').html())
-		}
-		var skillValue = (['Arbalètes', 'Arcs', 'Jet', 'Siège'].includes(spe)) ? v('tir') : v('cac')
+        speValue = toInt($('.skills td:nth-child(2):contains("' + spe + '")').next('td').html())
+		skillValue = (['Arbalètes', 'Arcs', 'Armes de Jet', 'Siège'].includes(spe)) ? v('tir') : v('cac')
 
 		var bonusStr = ''
 		if(qualityId) {
