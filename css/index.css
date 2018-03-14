@@ -419,7 +419,7 @@ input[type="checkbox"]:checked {
     Verso
  * -------------- */
 
-.equipment td, .haut-fait td, .allies td, .enemis td, .richesse td {
+.equipment td, .haut-fait td, .allies td, .ennemis td, .richesse td {
     padding: 2px;
     font-size: 16px;
 }
@@ -428,14 +428,88 @@ input[type="checkbox"]:checked {
     position: absolute;
     top: 0;
     left: 0;
-    width: 49.5%;
+    width: 75%;
+}
+
+.notes {
+    position: absolute;
+    top: 378px;
+    left: 0;
+    width: 100%;
+}
+
+.td-notes {
+    height: 150px;
+}
+
+.avantages {
+    position: absolute;
+    top: 558px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.avantages td {
+    font-size: 13px;
+}
+
+.avantages td select {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-family: "magik";
+}
+
+.avantages tr:not(:first-child) {
+    height:37px
+}
+
+.avantages tr td:nth-child(1) {
+    width: 25%;
+}
+
+.avantages tr td:nth-child(2) {
+    width: 75%;
+}
+
+.defauts {
+    position: absolute;
+    top: 775px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.defauts td {
+    font-size: 13px;
+}
+
+.defauts td select {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-family: "magik";
+}
+
+.defauts tr:not(:first-child) {
+    height:37px
+}
+
+.defauts tr td:nth-child(1) {
+    width: 25%;
+}
+
+.defauts tr td:nth-child(2) {
+    width: 75%;
 }
 
 .haut-fait {
     position: absolute;
-    top: 0;
-    right: 25%;
-    width: 24.25%;
+    top: 178px;
+    width: 49.5%;
 }
 
 .richesse {
@@ -445,18 +519,9 @@ input[type="checkbox"]:checked {
     width: 24.25%;
 }
 
-.allies {
-    position: absolute;
-    top: 178px;
-    right: 25%;
-    width: 24.25%;
-}
-
-.enemis {
-    position: absolute;
-    top: 178px;
-    right: 0;
-    width: 24.25%;
+.richesse img {
+    width: 14px;
+    height: 14px;
 }
 
 .richesse tr.t-header td {
@@ -466,7 +531,7 @@ input[type="checkbox"]:checked {
 }
 
 .richesse td {
-    text-align: left;
+    text-align: center;
     padding: 3px;
 }
 
@@ -475,64 +540,38 @@ input[type="checkbox"]:checked {
 }
 
 .richesse tr:last-child td:nth-child(2) {
-    padding: 7px;
+    padding: 5px;
 }
 
-.rules-combat ul,
-.rules-combat ol,
-.rules-intrigue ul,
-.rules-intrigue ol {
-    padding-left: 20px;
-}
-
-.rules-combat ul li,
-.rules-combat ol li,
-.rules-intrigue ul li,
-.rules-intrigue ol li {
-    padding: 2px;
-    font-size: 14px;
-    text-align: left;
-}
-
-.rules-combat h2,
-.rules-intrigue h2 {
-    text-align: left;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.rules-combat table tr td,
-.rules-intrigue table tr td {
-    font-size: 14px;
-    padding: 2px 3px;
-}
-
-.rules-combat table tr td:nth-child(3),
-.rules-intrigue table tr td:nth-child(3) {
-    text-align: left;
-}
-
-.rules-combat {
+.allies {
     position: absolute;
-    top: 491px;
-    left: 0;
-    width: 49.5%;
+    top: 178px;
+    right: 25%;
+    width: 25%;
 }
 
-.rules-intrigue {
+.ennemis {
     position: absolute;
-    top: 376px;
+    top: 178px;
     right: 0;
-    width: 49.5%;
+    width: 24.25%;
 }
 
-.rules-intrigue table {
+input[type="file"], #input-show-picture {
     width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    max-width: 242px;
+    max-height: 180px;
 }
 
-.rules-intrigue table td:nth-child(2),
-.rules-intrigue table td:nth-child(3),
-.rules-intrigue table td:nth-child(4) {
-    text-align: left;
+#remove-picture-button {
+    border: 1px solid black;
+    background-color: red;
+    color: #ffffff;
+    padding: 5px 10px;
+    position:absolute;
+    top:0;
+    right:0;
 }

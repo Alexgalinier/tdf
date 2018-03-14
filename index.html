@@ -39,7 +39,9 @@
                 <table class="picture">
                     <tbody>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td>
+                            <img id="input-show-picture"/><input id="input-choose-picture" type="file">
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -615,23 +617,8 @@
                 <img src="images/blason_sans_fond.png" alt="" class="bg" />
                 <table class="equipment">
                     <tr class="t-header">
-                        <td colspan="2">Equipement</td>
+                        <td>Equipement</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
@@ -641,10 +628,42 @@
                     <tr><td></td></tr>
                 </table>
 
+                <table class="notes">
+                    <tr class="t-header">
+                        <td>Notes</td>
+                    </tr>
+                    <tr><td contenteditable="true" class="td-notes">&nbsp;</td></tr>
+                </table>
+
+                <table class="avantages">
+                    <tr class="t-header">
+                        <td>Avantage</td>
+                        <td>Attribut</td>
+                    </tr>
+                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                </table>
+
+                <table class="defauts">
+                    <tr class="t-header">
+                        <td>Défaut</td>
+                        <td>Attribut</td>
+                    </tr>
+                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                </table>
+
                 <table class="haut-fait">
                     <tr class="t-header">
                         <td>Haut faits</td>
                     </tr>
+                    <tr><td></td></tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
@@ -668,9 +687,9 @@
                     <tr><td></td></tr>
                 </table>
 
-                <table class="enemis">
+                <table class="ennemis">
                     <tr class="t-header">
-                        <td>Enemis</td>
+                        <td>Ennemis</td>
                     </tr>
                     <tr><td></td></tr>
                     <tr><td></td></tr>
@@ -686,183 +705,12 @@
                     <tr class="t-header">
                         <td colspan="2">Richesse</td>
                     </tr>
-                    <tr><td>Dragon d'Or</td><td></td></tr>
-                    <tr><td>Lune d'Argent</td><td></td></tr>
-                    <tr><td>Cerf d'Argent</td><td></td></tr>
-                    <tr><td>Etoile de Cuivre</td><td></td></tr>
-                    <tr><td>Liard de Cuivre</td><td></td></tr>
-                    <tr><td>Sous de Cuivre</td><td></td></tr>
-                </table>
-
-                <table class="rules-combat">
-                    <tr class="t-header">
-                        <td>Combat</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ol>
-                                <li>Terrain (Décrit par Meujeuh!)</li>
-                                <li>Détection (Test de Furtivité contre Vigilance passive: Vigilance x4)</li>
-                                <li>Initiative (Test de Vivacité, si égalité: au meilleur score de Vivacité)</li>
-                                <li>Actions (1 majeure "M" ou 2 mineures "m")
-                                    <table>
-                                        <tr>
-                                            <td>Attaque standard</td><td>m</td><td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Attaque répartie</td><td>M</td><td>Répartie les dés de test et bonus par cible</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Attaque à 2 armes</td><td>M</td><td>Ajoute dégâts arme Secondaire</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Attaque combinée</td><td>M</td><td>Dégâts Secondaire chaques cibles</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Attaque montée</td><td>-</td><td>Voir livre</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Désarconner</td><td>M</td><td>Voir livre</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Immobiliser</td><td>M</td><td>Voir livre</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charge</td><td>M</td><td>Déplacement x2, -1D test, +2 dégâts</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Assister</td><td>m</td><td>Moitié du rang de la compétence à l'allié</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Reprendre souffle</td><td>M</td><td>Test Endu, soigne 1 dégât par degré</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Intéragir</td><td>m</td><td>Ouvrir une porte, sortir sa bite...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Se déplacer</td><td>m</td><td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sprinter</td><td>M</td><td>4x le déplacement</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tomber/Se relever</td><td>m</td><td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Passer</td><td>M</td><td>+2B à un test au prochain tour</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Utiliser compétence</td><td>-</td><td>voir MJ</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                            </ol>
-
-                            <h2>Dégâts subis</h2>
-                            <ul>
-                                <li>Cocher une case de Lésions annule 1 point de dégâts de l'attaque</li>
-                                <li>Cocher une case de Blessure annule tous les dégâts de l'attaque</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="rules-intrigue">
-                    <tr class="t-header">
-                        <td>Intrigue</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ol>
-                                <li>Objectif (Amitié, Renseignement, Service ou Tromperie)</li>
-                                <li>Humeur
-                                    <table>
-                                        <tr>
-                                            <td>Affectueuse</td><td>VH 1</td><td>Duperie -2</td><td>Persuasions +5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Amicale</td><td>VH 2</td><td>Duperie -1</td><td>Persuasions +3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Aimable</td><td>VH 3</td><td>Duperie +0</td><td>Persuasions +1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Indifférente</td><td>VH 4</td><td>Duperie +0</td><td>Persuasions +0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Antipathique</td><td>VH 5</td><td>Duperie +1</td><td>Persuasions -2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Inamicale</td><td>VH 6</td><td>Duperie +2</td><td>Persuasions -4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Malveillante</td><td>VH 7</td><td>Duperie +3</td><td>Persuasions -6</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                                <li>Initiative (Test de Réputation)</li>
-                                <li>Choix technique
-                                    <table>
-                                        <tr class="t-header">
-                                            <td>Nom</td><td>Influence</td><td>En Persusasion</td><td>En Duperie</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charmer</td><td>Rang Persuasion</td><td>Charmer</td><td>Comédie</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Convaincre</td><td>Rang Volonté</td><td>Convaincre</td><td>Comédie</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Inciter</td><td>Rang Ingéniosité</td><td>Inciter</td><td>Bluff</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Intimider</td><td>Rang Volonté</td><td>Intimider</td><td>Bluff ou Comédie</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Marchander</td><td>Rang Ingéniosité</td><td>Marchander</td><td>Bluff</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Persifler</td><td>Rang Vigilance</td><td>Persifler</td><td>Bluff</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Séduire</td><td>Rang Persuasion</td><td>Séduire</td><td>Bluff</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                                <li>Roleplay en accord avec la technique puis 1 action
-                                    <table>
-                                        <tr>
-                                            <td>Assister</td><td>Test Persuasion (9) Moitié Rang Persuasion à l'allié</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Réfléchir</td><td>Passe le tour, +2B au prochain jet</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Embobiner</td><td>Test Persuasion v Volonté passive, cible perd Ingé en déf</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Influencer</td><td>Test technique choisie v Déf, Dégâts Influence</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Manipuler</td><td>Test Persuasion v Volonté passive, choix technique cible</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Calmer</td><td>Test Persuasion (12) Soigne du Rang, +1 par degré</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Comprendre</td><td>Test Vigilance v Duperie passive, +1D pour l'intrigue</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rempart</td><td>Test Statut v Volonté passive, humeur cible monte de 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Se replier</td><td>Test dévouement, remplace la déf</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                            </ol>
-                        </td>
-                    </tr>
+                    <tr><td>Dragon d'Or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dragon_or.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Lune d'Argent &nbsp;&nbsp;<img src="images/lune_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Cerf d'Argent &nbsp;&nbsp;&nbsp;<img src="images/cerf_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Etoile de Cuivre &nbsp;&nbsp;<img src="images/etoile_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Liard de Cuivre &nbsp;<img src="images/liard_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Sous de Cuivre &nbsp;&nbsp;<img src="images/sous_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
                 </table>
 
                 <div class="ruban">
@@ -891,6 +739,19 @@
         <script src="js/armor/shared/armor.model.js"></script>
         <script src="data/armors.js"></script>
         <script src="js/armor/armor.js"></script>
+
+        <!-- Avantages -->
+        <script src="js/avantage/shared/avantage.model.js"></script>
+        <script src="data/avantages.js"></script>
+        <script src="js/avantage/avantage.js"></script>
+
+        <!-- Defauts -->
+        <script src="js/defaut/shared/defaut.model.js"></script>
+        <script src="data/defauts.js"></script>
+        <script src="js/defaut/defaut.js"></script>
+
+        <!-- Image -->
+        <script src="js/image/image.js"></script>
 
         <script src="js/index-to-refactor.js"></script>
     </body>
