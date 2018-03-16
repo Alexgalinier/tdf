@@ -505,7 +505,7 @@
                     </tr>
                     <tr class="Score">
                         <td style="text-align: left" colspan="3">
-                            <select class="armor-select"></select>
+                            <select id="select-armor" class="armor-select"></select>
                         </td>
                     </tr>
                     </tbody>
@@ -577,35 +577,35 @@
                         </tr>
                         <!-- 1ere ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon1" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon1">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon1" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon1">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon1">&nbsp;</td>
                         </tr>
                         <!-- 2eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon2" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon2">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon2" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon2">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon2">&nbsp;</td>
                         </tr>
                         <!-- 3eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon3" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon3">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon3" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon3">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon3">&nbsp;</td>
                         </tr>
                         <!-- 4eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon4" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon4">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon4" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon4">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon4">&nbsp;</td>
                         </tr>
                     </tbody>
                 </table>
@@ -623,20 +623,20 @@
                     <tr class="t-header">
                         <td>Equipement</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="equipement1"></td></tr>
+                    <tr><td id="equipement2"></td></tr>
+                    <tr><td id="equipement3"></td></tr>
+                    <tr><td id="equipement4"></td></tr>
+                    <tr><td id="equipement5"></td></tr>
+                    <tr><td id="equipement6"></td></tr>
+                    <tr><td id="equipement7"></td></tr>
                 </table>
 
                 <table class="notes">
                     <tr class="t-header">
                         <td>Notes</td>
                     </tr>
-                    <tr><td contenteditable="true" class="td-notes">&nbsp;</td></tr>
+                    <tr><td contenteditable="true" class="td-notes"  id="textarea-notes">&nbsp;</td></tr>
                 </table>
 
                 <table class="avantages">
@@ -644,11 +644,11 @@
                         <td>Avantage</td>
                         <td>Attribut</td>
                     </tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage1" class="avantage-select"></select></td><td id="attribut-avantage1" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage2" class="avantage-select"></select></td><td id="attribut-avantage2" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage3" class="avantage-select"></select></td><td id="attribut-avantage3" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage4" class="avantage-select"></select></td><td id="attribut-avantage4" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage5" class="avantage-select"></select></td><td id="attribut-avantage5" class="td-not-editable"></td></tr>
                 </table>
 
                 <table class="defauts">
@@ -656,65 +656,65 @@
                         <td>Défaut</td>
                         <td>Attribut</td>
                     </tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut1" class="defaut-select"></select></td><td id="attribut-defaut1" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut2" class="defaut-select"></select></td><td id="attribut-defaut2" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut3" class="defaut-select"></select></td><td id="attribut-defaut3" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut4" class="defaut-select"></select></td><td id="attribut-defaut4" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut5" class="defaut-select"></select></td><td id="attribut-defaut5" class="td-not-editable"></td></tr>
                 </table>
 
                 <table class="haut-fait">
                     <tr class="t-header">
                         <td>Haut faits</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="hauts-faits1"></td></tr>
+                    <tr><td id="hauts-faits2"></td></tr>
+                    <tr><td id="hauts-faits3"></td></tr>
+                    <tr><td id="hauts-faits4"></td></tr>
+                    <tr><td id="hauts-faits5"></td></tr>
+                    <tr><td id="hauts-faits6"></td></tr>
+                    <tr><td id="hauts-faits7"></td></tr>
+                    <tr><td id="hauts-faits8"></td></tr>
                 </table>
 
                 <table class="allies">
                     <tr class="t-header">
                         <td>Alliés</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="allies1"></td></tr>
+                    <tr><td id="allies2"></td></tr>
+                    <tr><td id="allies3"></td></tr>
+                    <tr><td id="allies4"></td></tr>
+                    <tr><td id="allies5"></td></tr>
+                    <tr><td id="allies6"></td></tr>
+                    <tr><td id="allies7"></td></tr>
+                    <tr><td id="allies8"></td></tr>
                 </table>
 
                 <table class="ennemis">
                     <tr class="t-header">
                         <td>Ennemis</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="ennemis1"></td></tr>
+                    <tr><td id="ennemis2"></td></tr>
+                    <tr><td id="ennemis3"></td></tr>
+                    <tr><td id="ennemis4"></td></tr>
+                    <tr><td id="ennemis5"></td></tr>
+                    <tr><td id="ennemis6"></td></tr>
+                    <tr><td id="ennemis7"></td></tr>
+                    <tr><td id="ennemis8"></td></tr>
                 </table>
 
                 <table class="richesse">
                     <tr class="t-header">
                         <td colspan="2">Richesse</td>
                     </tr>
-                    <tr><td>Dragon d'Or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dragon_or.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Lune d'Argent &nbsp;&nbsp;<img src="images/lune_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Cerf d'Argent &nbsp;&nbsp;&nbsp;<img src="images/cerf_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Etoile de Cuivre &nbsp;&nbsp;<img src="images/etoile_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Liard de Cuivre &nbsp;<img src="images/liard_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Sous de Cuivre &nbsp;&nbsp;<img src="images/sous_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Dragon d'Or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dragon_or.jpeg" alt="Dragon d'or"/></td><td id="richesse1"></td></tr>
+                    <tr><td>Lune d'Argent &nbsp;&nbsp;<img src="images/lune_argent.jpeg" alt="Dragon d'or"/></td><td id="richesse2"></td></tr>
+                    <tr><td>Cerf d'Argent &nbsp;&nbsp;&nbsp;<img src="images/cerf_argent.jpeg" alt="Dragon d'or"/></td><td id="richesse3"></td></tr>
+                    <tr><td>Etoile de Cuivre &nbsp;&nbsp;<img src="images/etoile_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse4"></td></tr>
+                    <tr><td>Liard de Cuivre &nbsp;<img src="images/liard_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse5"></td></tr>
+                    <tr><td>Sous de Cuivre &nbsp;&nbsp;<img src="images/sous_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse6"></td></tr>
                 </table>
 
                 <div class="ruban">
