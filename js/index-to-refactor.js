@@ -113,7 +113,8 @@ function getJsonDataFromHtml(){
 			value: inputsToSave[i].value,
 			tabIndex: inputsToSave[i].tabIndex,
 			className: inputsToSave[i].className,
-			innerText: inputsToSave[i].innerText
+			innerText: inputsToSave[i].innerText,
+			tagName: inputsToSave[i].tagName
 		});
 	}
 
