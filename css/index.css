@@ -56,6 +56,24 @@ body {
     left: -30px;
 }
 
+#button-export {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+}
+
+#file-import {
+    position: absolute;
+    top: -30px;
+    left: 190px;
+}
+
+#button-import {
+    position: absolute;
+    top: -30px;
+    left: 390px;
+}
+
 .bg {
     filter: grayscale(100%) invert(100%) brightness(80%);
     position: absolute;
@@ -130,6 +148,23 @@ body {
     #switch-blason {
         display: none;
     }
+
+    #button-export {
+        display: none;
+    }
+
+    #button-import {
+        display: none;
+    }
+
+    #remove-picture-button {
+        display: none;
+    }
+
+    #input-choose-picture  {
+        display: none;
+    }
+
 }
 
 /* ------------------

@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
     </head>
     <body>
+    <div id="div-container">
         <div class="sheet">
             <img src="images/blason_sans_fond.png" alt="" class="bg" />
             <div class="inner-sheet">
                 <input type="button" id="switch-blason" value="Cacher Blason">
+                <input type="button" id="button-export" value="Exporter">
+                <input type="file" id="file-import" value="Import"/><br />
+                <input type="button" id="button-import" value="Importer">
 
                 <input type="text" class="skill-val" id="agility" tabindex="9" />
                 <input type="text" class="skill-val" id="militar" tabindex="15"/>
@@ -31,7 +35,7 @@
                 <input type="text" class="skill-val skill2-val" id="will" tabindex="94" />
 
                 <div class="name">
-                    <div class="name-content" contenteditable="true">
+                    <div id="character-name" class="name-content" contenteditable="true">
                         Godric Winkeller
                     </div>
                 </div>
@@ -40,7 +44,7 @@
                     <tbody>
                     <tr>
                         <td>
-                            <img id="input-show-picture"/><input id="input-choose-picture" type="file">
+                            <img id="input-show-picture" /><input id="input-choose-picture" type="file">
                         </td>
                     </tr>
                     </tbody>
@@ -54,9 +58,9 @@
                             <td>Age</td>
                         </tr>
                         <tr>
-                            <td tabindex="1">&nbsp;</td>
-                            <td tabindex="2">&nbsp;</td>
-                            <td tabindex="3">&nbsp;</td>
+                            <td id="maison" tabindex="1">&nbsp;</td>
+                            <td id="sexe" tabindex="2">&nbsp;</td>
+                            <td id="age" tabindex="3">&nbsp;</td>
                         </tr>
                         <tr class="t-header">
                             <td>Archétype</td>
@@ -64,17 +68,17 @@
                             <td>XP Totale</td>
                         </tr>
                         <tr>
-                            <td tabindex="4">&nbsp;</td>
-                            <td tabindex="5">&nbsp;</td>
-                            <td tabindex="6">&nbsp;</td>
+                            <td id="archetype" tabindex="4">&nbsp;</td>
+                            <td id="xp" tabindex="5">&nbsp;</td>
+                            <td id="xp-totale" tabindex="6">&nbsp;</td>
                         </tr>
                         <tr class="t-header">
                             <td>Points de Destinée</td>
                             <td colspan="3">Points de Gloire</td>
                         </tr>
                         <tr>
-                            <td tabindex="7">&nbsp;</td>
-                            <td tabindex="8" colspan="3">&nbsp;</td>
+                            <td id="points-destinee" tabindex="7">&nbsp;</td>
+                            <td id="points-gloire" tabindex="8" colspan="3">&nbsp;</td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,22 +93,22 @@
                         <!-- AGILITE          -->
                         <!-- ---------------- -->
                         <tr class="skill">
-                            <td>Agilité</td><td></td><td></td>
+                            <td>Agilité</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Acrobatie</td><td tabindex="10"></td>
+                            <td></td><td>Acrobatie</td><td id="Acrobatie" tabindex="10" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Contorsion</td><td tabindex="11"></td>
+                            <td></td><td>Contorsion</td><td id="Contorsion" tabindex="11" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Équilibre</td><td tabindex="12"></td>
+                            <td></td><td>Équilibre</td><td id="Équilibre" tabindex="12" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Esquive</td><td tabindex="13"></td>
+                            <td></td><td>Esquive</td><td id="Esquive" tabindex="13" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Vivacité</td><td tabindex="14"></td>
+                            <td></td><td>Vivacité</td><td id="Vivacité" tabindex="14" ></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -114,152 +118,152 @@
                             <td>Art Militaire</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Commandement</td><td tabindex="16"></td>
+                            <td></td><td>Commandement</td><td id="Commandement" tabindex="16" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Stratégie</td><td tabindex="17"></td>
+                            <td></td><td>Stratégie</td><td id="Stratégie" tabindex="17" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Tactique</td><td tabindex="18"></td>
+                            <td></td><td>Tactique</td><td id="Tactique" tabindex="18" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Athlétisme       -->
                         <!-- ---------------- -->
                         <tr class="skill">
-                            <td>Athlétisme</td><td></td><td></td>
+                            <td>Athlétisme</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Course</td><td tabindex="20"></td>
+                            <td></td><td>Course</td><td id="Course" tabindex="20" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Escalade</td><td tabindex="21"></td>
+                            <td></td><td>Escalade</td><td id="Escalade" tabindex="21" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Force</td><td tabindex="22" id="force"></td>
+                            <td></td><td>Force</td><td id="Force" tabindex="22" id="force" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Jet</td><td tabindex="23"></td>
+                            <td></td><td>Jet</td><td id="Jet" tabindex="23" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Natation</td><td tabindex="24"></td>
+                            <td></td><td>Natation</td><td id="Natation" tabindex="24" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Saut</td><td tabindex="25"></td>
+                            <td></td><td>Saut</td><td id="Saut" tabindex="25" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Connaissances    -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Connaissances</td><td></td><td></td>
+                            <td>Connaissances</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>De la rue</td><td tabindex="27"></td>
+                            <td></td><td>De la rue</td><td id="De-La-Rue" tabindex="27" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Education</td><td tabindex="28"></td>
+                            <td></td><td>Education</td><td id="Education" tabindex="28" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Recherche</td><td tabindex="29"></td>
+                            <td></td><td>Recherche</td><td id="Recherche" tabindex="29" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Corps à corps       -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Corps à corps</td><td></td><td></td>
+                            <td>Corps à corps</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Armes d'Hast</td><td tabindex="31"></td>
+                            <td></td><td>Armes d'Hast</td><td id="Armes-D-Hast" tabindex="31" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Boucliers</td><td tabindex="32"></td>
+                            <td></td><td>Boucliers</td><td id="Boucliers" tabindex="32" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Casse-tête</td><td tabindex="33"></td>
+                            <td></td><td>Casse-tête</td><td id="Casse-Tête" tabindex="33" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Escrime</td><td tabindex="34"></td>
+                            <td></td><td>Escrime</td><td id="Escrime" tabindex="34" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Haches</td><td tabindex="35"></td>
+                            <td></td><td>Haches</td><td id="Haches" tabindex="35" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Lames Courtes</td><td tabindex="36"></td>
+                            <td></td><td>Lames Courtes</td><td id="Lames-Courtes" tabindex="36" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Lames Longues</td><td tabindex="37"></td>
+                            <td></td><td>Lames Longues</td><td id="Lames-Longues" tabindex="37" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Lances</td><td tabindex="38"></td>
+                            <td></td><td>Lances</td><td id="Lances" tabindex="38" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Rixe</td><td tabindex="39"></td>
+                            <td></td><td>Rixe</td><td id="Rixe" tabindex="39" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Discrétion       -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Discrétion</td><td></td><td></td>
+                            <td>Discrétion</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Caméléon</td><td tabindex="40"></td>
+                            <td></td><td>Caméléon</td><td id="Caméléon" tabindex="40" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Furtivité</td><td tabindex="41"></td>
+                            <td></td><td>Furtivité</td><td id="Furtivité" tabindex="41" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Dressage         -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Dressage</td><td></td><td></td>
+                            <td>Dressage</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Charme</td><td tabindex="43"></td>
+                            <td></td><td>Charme</td><td id="Charme" tabindex="43" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Conduite</td><td tabindex="44"></td>
+                            <td></td><td>Conduite</td><td id="Conduite" tabindex="44" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Équitation</td><td tabindex="45"></td>
+                            <td></td><td>Équitation</td><td id="Équitation" tabindex="45" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Exercice</td><td tabindex="46"></td>
+                            <td></td><td>Exercice</td><td id="Exercice" tabindex="46" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Duperie         -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Duperie</td><td></td><td></td>
+                            <td>Duperie</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Bluff</td><td tabindex="48"></td>
+                            <td></td><td>Bluff</td><td id="Bluff" tabindex="48" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Comédie</td><td tabindex="49"></td>
+                            <td></td><td>Comédie</td><td id="Comédie" tabindex="49" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Déguisement</td><td tabindex="50"></td>
+                            <td></td><td>Déguisement</td><td id="Déguisement" tabindex="50" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Triche</td><td tabindex="51"></td>
+                            <td></td><td>Triche</td><td id="Triche" tabindex="51" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Endurance        -->
                         <!-- ---------------- -->
                         <tr class="skill skill-adjustement">
-                            <td>Endurance</td><td></td><td></td>
+                            <td>Endurance</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Résilience</td><td tabindex="53"></td>
+                            <td></td><td>Résilience</td><td id="Résilience" tabindex="53" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Vigueur</td><td tabindex="54"></td>
+                            <td></td><td>Vigueur</td><td id="Vigueur" tabindex="54" ></td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,42 +271,42 @@
                 <table class="skills skills-2">
                     <tbody>
                         <tr class="t-header">
-                            <td>Compétences</td><td>Spécialité</td><td>Score</td>
+                            <td>Compétences</td><td >Spécialité</td><td >Score</td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Ingéniosité        -->
                         <!-- ---------------- -->
                         <tr class="skill">
-                            <td>Ingéniosité</td><td></td><td></td>
+                            <td>Ingéniosité</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Décryptage</td><td tabindex="56"></td>
+                            <td></td><td>Décryptage</td><td id="Décryptage" tabindex="56" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Logique</td><td tabindex="57"></td>
+                            <td></td><td>Logique</td><td id="Logique" tabindex="57" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>Mémoire</td><td tabindex="58"></td>
+                            <td></td><td>Mémoire</td><td id="Mémoire" tabindex="58" ></td>
                         </tr>
 
                         <!-- ---------------- -->
                         <!-- Langues          -->
                         <!-- ---------------- -->
                         <tr class="skill">
-                            <td>Langues</td><td></td><td></td>
+                            <td>Langues</td><td ></td><td ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>&nbsp;</td><td></td>
+                            <td></td><td id="langue1"></td><td id="langue1Score" tabindex="59" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>&nbsp;</td><td></td>
+                            <td></td><td id="langue2"></td><td id="langue2Score" tabindex="60" ></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>&nbsp;</td><td></td>
+                            <td></td><td id="langue3"></td><td id="langue3Score" tabindex="61" ></td>
                         </tr>
                         <tr>
-                            <td></td><td>&nbsp;</td><td></td>
+                            <td></td><td id="langue4"></td><td id="langue4Score" tabindex="62" ></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -312,13 +316,13 @@
                             <td>Larcin</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Crochetage</td><td tabindex="61"></td>
+                            <td></td><td>Crochetage</td><td id="Crochetage" tabindex="63"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Passe-passe</td><td tabindex="62"></td>
+                            <td></td><td>Passe-passe</td><td id="Passe-passe" tabindex="64"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Vol</td><td tabindex="63"></td>
+                            <td></td><td>Vol</td><td id="Vol" tabindex="65"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -328,25 +332,25 @@
                             <td>Persuasion</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Charmer</td><td tabindex="65"></td>
+                            <td></td><td>Charmer</td><td id="Charmer" tabindex="66"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Convaincre</td><td tabindex="66"></td>
+                            <td></td><td>Convaincre</td><td id="Convaincre" tabindex="67"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Inciter</td><td tabindex="67"></td>
+                            <td></td><td>Inciter</td><td id="Inciter" tabindex="68"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Intimider</td><td tabindex="68"></td>
+                            <td></td><td>Intimider</td><td id="Intimider" tabindex="69"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Marchander</td><td tabindex="69"></td>
+                            <td></td><td>Marchander</td><td id="Marchander" tabindex="70"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Persifler</td><td tabindex="70"></td>
+                            <td></td><td>Persifler</td><td id="Persifler" tabindex="71"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Séduire</td><td tabindex="71"></td>
+                            <td></td><td>Séduire</td><td id="Séduire" tabindex="72"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -356,13 +360,13 @@
                             <td>Soins</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Blessures</td><td tabindex="73"></td>
+                            <td></td><td>Blessures</td><td id="Blessures" tabindex="73"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Diagnostique</td><td tabindex="74"></td>
+                            <td></td><td>Diagnostique</td><td id="Diagnostique" tabindex="74"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Infection</td><td tabindex="75"></td>
+                            <td></td><td>Infection</td><td id="Infection" tabindex="75"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -372,16 +376,16 @@
                             <td>Statut</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Bienséance</td><td tabindex="77"></td>
+                            <td></td><td>Bienséance</td><td id="Bienséance" tabindex="77"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Intendance</td><td tabindex="78"></td>
+                            <td></td><td>Intendance</td><td id="Intendance" tabindex="78"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Réputation</td><td tabindex="79"></td>
+                            <td></td><td>Réputation</td><td id="Réputation" tabindex="79"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Tournoi</td><td tabindex="80"></td>
+                            <td></td><td>Tournoi</td><td id="Tournoi" tabindex="80"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -391,16 +395,16 @@
                             <td>Survie</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Chasse</td><td tabindex="82"></td>
+                            <td></td><td>Chasse</td><td id="Chasse" tabindex="82"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Fourageur</td><td tabindex="83"></td>
+                            <td></td><td>Fourageur</td><td id="Fourageur" tabindex="83"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Orientation</td><td tabindex="84"></td>
+                            <td></td><td>Orientation</td><td id="Orientation" tabindex="84"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Pistage</td><td tabindex="85"></td>
+                            <td></td><td>Pistage</td><td id="Pistage" tabindex="85"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -410,16 +414,16 @@
                             <td>Tir</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Arbalètes</td><td tabindex="87"></td>
+                            <td></td><td>Arbalètes</td><td id="Arbalètes" tabindex="87"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Arcs</td><td tabindex="88"></td>
+                            <td></td><td>Arcs</td><td id="Arcs" tabindex="88"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Armes de Jet</td><td tabindex="89"></td>
+                            <td></td><td>Armes de Jet</td><td id="Armes-de-Jet" tabindex="89"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Siège</td><td tabindex="90"></td>
+                            <td></td><td>Siège</td><td id="Siège" tabindex="90"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -429,10 +433,10 @@
                             <td>Vigilance</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Empathie</td><td tabindex="92"></td>
+                            <td></td><td>Empathie</td><td id="Empathie" tabindex="92"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Observation</td><td tabindex="93"></td>
+                            <td></td><td>Observation</td><td id="Observation" tabindex="93"></td>
                         </tr>
 
                         <!-- ---------------- -->
@@ -442,13 +446,13 @@
                             <td>Volonté</td><td></td><td></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Coordination</td><td tabindex="95"></td>
+                            <td></td><td>Coordination</td><td id="Coordination" tabindex="95"></td>
                         </tr>
                         <tr class="ability">
-                            <td></td><td>Courage</td><td tabindex="96"></td>
+                            <td></td><td>Courage</td><td id="Courage" tabindex="96"></td>
                         </tr>
                         <tr>
-                            <td></td><td>Dévouement</td><td tabindex="97"></td>
+                            <td></td><td>Dévouement</td><td id="Dévouement" tabindex="97"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -501,7 +505,7 @@
                     </tr>
                     <tr class="Score">
                         <td style="text-align: left" colspan="3">
-                            <select class="armor-select"></select>
+                            <select id="select-armor" class="armor-select"></select>
                         </td>
                     </tr>
                     </tbody>
@@ -573,35 +577,35 @@
                         </tr>
                         <!-- 1ere ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon1" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon1">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon1" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon1">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon1">&nbsp;</td>
                         </tr>
                         <!-- 2eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon2" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon2">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon2" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon2">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon2">&nbsp;</td>
                         </tr>
                         <!-- 3eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon3" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon3">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon3" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon3">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon3">&nbsp;</td>
                         </tr>
                         <!-- 4eme ligne -->
                         <tr>
-                            <td class="td-not-editable"><select class="weapon-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable"><select class="quality-select"></select></td>
-                            <td class="td-not-editable">&nbsp;</td>
-                            <td class="td-not-editable">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-weapon4" class="weapon-select"></select></td>
+                            <td class="td-not-editable" id="des-weapon4">&nbsp;</td>
+                            <td class="td-not-editable"><select id="select-quality-weapon4" class="quality-select"></select></td>
+                            <td class="td-not-editable" id="degats-weapon4">&nbsp;</td>
+                            <td class="td-not-editable" id="attributs-weapon4">&nbsp;</td>
                         </tr>
                     </tbody>
                 </table>
@@ -619,20 +623,20 @@
                     <tr class="t-header">
                         <td>Equipement</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="equipement1"></td></tr>
+                    <tr><td id="equipement2"></td></tr>
+                    <tr><td id="equipement3"></td></tr>
+                    <tr><td id="equipement4"></td></tr>
+                    <tr><td id="equipement5"></td></tr>
+                    <tr><td id="equipement6"></td></tr>
+                    <tr><td id="equipement7"></td></tr>
                 </table>
 
                 <table class="notes">
                     <tr class="t-header">
                         <td>Notes</td>
                     </tr>
-                    <tr><td contenteditable="true" class="td-notes">&nbsp;</td></tr>
+                    <tr><td contenteditable="true" class="td-notes"  id="textarea-notes">&nbsp;</td></tr>
                 </table>
 
                 <table class="avantages">
@@ -640,11 +644,11 @@
                         <td>Avantage</td>
                         <td>Attribut</td>
                     </tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="avantage-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage1" class="avantage-select"></select></td><td id="attribut-avantage1" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage2" class="avantage-select"></select></td><td id="attribut-avantage2" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage3" class="avantage-select"></select></td><td id="attribut-avantage3" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage4" class="avantage-select"></select></td><td id="attribut-avantage4" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-avantage5" class="avantage-select"></select></td><td id="attribut-avantage5" class="td-not-editable"></td></tr>
                 </table>
 
                 <table class="defauts">
@@ -652,65 +656,65 @@
                         <td>Défaut</td>
                         <td>Attribut</td>
                     </tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
-                    <tr><td class="td-not-editable"><select class="defaut-select"></select></td><td class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut1" class="defaut-select"></select></td><td id="attribut-defaut1" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut2" class="defaut-select"></select></td><td id="attribut-defaut2" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut3" class="defaut-select"></select></td><td id="attribut-defaut3" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut4" class="defaut-select"></select></td><td id="attribut-defaut4" class="td-not-editable"></td></tr>
+                    <tr><td class="td-not-editable"><select id="select-defaut5" class="defaut-select"></select></td><td id="attribut-defaut5" class="td-not-editable"></td></tr>
                 </table>
 
                 <table class="haut-fait">
                     <tr class="t-header">
                         <td>Haut faits</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="hauts-faits1"></td></tr>
+                    <tr><td id="hauts-faits2"></td></tr>
+                    <tr><td id="hauts-faits3"></td></tr>
+                    <tr><td id="hauts-faits4"></td></tr>
+                    <tr><td id="hauts-faits5"></td></tr>
+                    <tr><td id="hauts-faits6"></td></tr>
+                    <tr><td id="hauts-faits7"></td></tr>
+                    <tr><td id="hauts-faits8"></td></tr>
                 </table>
 
                 <table class="allies">
                     <tr class="t-header">
                         <td>Alliés</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="allies1"></td></tr>
+                    <tr><td id="allies2"></td></tr>
+                    <tr><td id="allies3"></td></tr>
+                    <tr><td id="allies4"></td></tr>
+                    <tr><td id="allies5"></td></tr>
+                    <tr><td id="allies6"></td></tr>
+                    <tr><td id="allies7"></td></tr>
+                    <tr><td id="allies8"></td></tr>
                 </table>
 
                 <table class="ennemis">
                     <tr class="t-header">
                         <td>Ennemis</td>
                     </tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
+                    <tr><td id="ennemis1"></td></tr>
+                    <tr><td id="ennemis2"></td></tr>
+                    <tr><td id="ennemis3"></td></tr>
+                    <tr><td id="ennemis4"></td></tr>
+                    <tr><td id="ennemis5"></td></tr>
+                    <tr><td id="ennemis6"></td></tr>
+                    <tr><td id="ennemis7"></td></tr>
+                    <tr><td id="ennemis8"></td></tr>
                 </table>
 
                 <table class="richesse">
                     <tr class="t-header">
                         <td colspan="2">Richesse</td>
                     </tr>
-                    <tr><td>Dragon d'Or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dragon_or.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Lune d'Argent &nbsp;&nbsp;<img src="images/lune_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Cerf d'Argent &nbsp;&nbsp;&nbsp;<img src="images/cerf_argent.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Etoile de Cuivre &nbsp;&nbsp;<img src="images/etoile_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Liard de Cuivre &nbsp;<img src="images/liard_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
-                    <tr><td>Sous de Cuivre &nbsp;&nbsp;<img src="images/sous_cuivre.jpeg" alt="Dragon d'or"/></td><td></td></tr>
+                    <tr><td>Dragon d'Or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dragon_or.jpeg" alt="Dragon d'or"/></td><td id="richesse1"></td></tr>
+                    <tr><td>Lune d'Argent &nbsp;&nbsp;<img src="images/lune_argent.jpeg" alt="Dragon d'or"/></td><td id="richesse2"></td></tr>
+                    <tr><td>Cerf d'Argent &nbsp;&nbsp;&nbsp;<img src="images/cerf_argent.jpeg" alt="Dragon d'or"/></td><td id="richesse3"></td></tr>
+                    <tr><td>Etoile de Cuivre &nbsp;&nbsp;<img src="images/etoile_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse4"></td></tr>
+                    <tr><td>Liard de Cuivre &nbsp;<img src="images/liard_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse5"></td></tr>
+                    <tr><td>Sous de Cuivre &nbsp;&nbsp;<img src="images/sous_cuivre.jpeg" alt="Dragon d'or"/></td><td id="richesse6"></td></tr>
                 </table>
 
                 <div class="ruban">
@@ -719,6 +723,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- External-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
@@ -754,5 +759,6 @@
         <script src="js/image/image.js"></script>
 
         <script src="js/index-to-refactor.js"></script>
+
     </body>
 </html>
