@@ -116,7 +116,7 @@ function getJsonDataFromHtml(){
 
 function getJsonContentFromFileSelector(){
 	var file = document.getElementById("file-import").files[0];
-	console.log(file);
+
 	if (file) {
 		var reader = new FileReader();
 		reader.readAsText(file, "UTF-8");
