@@ -58,13 +58,6 @@ function updateColdBlood() {
 	);
 }
 
-function updateDefCombat() {
-	$('#def-combat').html(
-		v("agility") + v("athl") + v("vig")
-		- toInt($("#malus-armure").html().replace("&nbsp;", ""))
-	)
-}
-
 function updateSante() {
 	var sante = v("end") * 3;
 
