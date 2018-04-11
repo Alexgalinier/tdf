@@ -22,10 +22,10 @@ Data.set('weapons', Weapon, [
 	{id: 17, name: "Lance de Jet", group:"Armes de Jet", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:{ label: "Portée 10M"}},
 	{id: 18, name: "Trident de jet", group:"Armes de Jet", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:{ label: "Portée 10M"}},
 	// Boucliers
-	{id: 19, name: "Bouclier", group:"Boucliers", associatedComp:"athl", bonusBase:-2, bonusSpe:"", attributs:{ label: "Déf. +2"}},
-	{id: 20, name: "Grand Bouclier", group:"Boucliers", associatedComp:"athl", bonusBase:-2, bonusSpe:"", attributs:{ label: "Encombrante 1, Déf. +4"}},
-	{id: 21, name: "Pavois", group:"Boucliers", associatedComp:"athl", bonusBase:-2, bonusSpe:"", attributs:{ label: "Encombrante 2, Déf. +6"}},
-	{id: 22, name: "Targe", group:"Boucliers", associatedComp:"athl", bonusBase:-2, bonusSpe:"", attributs:{ label: "Déf. +1, Secondaire +1"}},
+	{id: 19, name: "Bouclier", group:"Boucliers", associatedComp:"athl", bonusDef: 2, bonusBase:-2, bonusSpe:"", attributs:{ label: "Déf. +2"}},
+	{id: 20, name: "Grand Bouclier", group:"Boucliers", associatedComp:"athl", bonusDef: 4, bonusBase:-2, bonusSpe:"", attributs:{ label: "Encombrante 1, Déf. +4"}},
+	{id: 21, name: "Pavois", group:"Boucliers", associatedComp:"athl", bonusDef: 6, bonusBase:-2, bonusSpe:"", attributs:{ label: "Encombrante 2, Déf. +6"}},
+	{id: 22, name: "Targe", group:"Boucliers", associatedComp:"athl", bonusDef: 1, bonusBase:-2, bonusSpe:"", attributs:{ label: "Déf. +1, Secondaire +1"}},
 	// Casse-tête
 	{id: 23, name: "Bâton", group:"Casse-tête", associatedComp:"athl", bonusBase:0, bonusSpe:"", attributs:{ label: "Rapide, 2 Mains"}},
 	{id: 24, name: "Fléau", group:"Casse-tête", associatedComp:"athl", bonusBase:0, bonusSpe:"force", attributs:{ label: "Puissance, Fracassante 1"}},

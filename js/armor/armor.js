@@ -24,14 +24,12 @@ function updateFromArmor(){
 		$("#valeur-armure").html(armor.val);
 		$("#malus-armure").html(armor.mal);
 		$("#encombrement-armure").html(armor.enc);
-
-		// Update def-combat
-		$("#def-combat").html(v("agility") + v("athl") + v("vig") - armor.mal);
 	}
 	else {
 		$("#valeur-armure").html('');
 		$("#malus-armure").html('');
 		$("#encombrement-armure").html('');
-		$("#def-combat").html(v("agility") + v("athl") + v("vig"));
 	}
+
+  updateDefCombat();
 }

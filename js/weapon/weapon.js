@@ -68,6 +68,8 @@ function updateFromWeapon(){
 			.next('td').html('')
 			.next('td').html('')
 	}
+
+  updateDefCombat();
 }
 
 function updateFromQuality(){
