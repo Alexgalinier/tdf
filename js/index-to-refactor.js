@@ -92,7 +92,7 @@ function updateSante() {
 }
 
 function updatePicture(){
-	showImage(document.getElementById("input-choose-picture"),document.getElementById("input-show-picture"));
+	showImage($("#input-choose-picture"), $('.picture td'));
 }
 
 /**
