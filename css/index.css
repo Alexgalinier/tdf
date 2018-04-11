@@ -437,6 +437,10 @@ input[type="checkbox"]:checked {
 .picture td {
     height: 197px;
     font-size: 16px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .intrigue td:nth-child(2), .defense td:nth-child(2) {
@@ -592,7 +596,7 @@ input[type="checkbox"]:checked {
     width: 24.25%;
 }
 
-input[type="file"], #input-show-picture {
+input[type="file"] {
     width: 100%;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
