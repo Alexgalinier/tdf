@@ -175,6 +175,7 @@ function importJsonContentToHtml(jsonData) {
 			$("#" + obj.id).html(obj.innerText);
 		}
 	});
+	updateSante();
 }
 
 /**

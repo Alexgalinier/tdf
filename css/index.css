@@ -437,11 +437,16 @@ input[type="checkbox"]:checked {
     width: 50px;
 }
 
-.picture td {
-    height: 197px;
+table.picture {
+    border-bottom: none;
+}
+
+table.picture tr td {
+    height: 203px;
+    border-bottom: none;
     font-size: 16px;
     padding: 0;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
