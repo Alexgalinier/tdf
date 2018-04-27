@@ -30,7 +30,7 @@ Weapon.prototype = {
 			}
 		}
 
-		if(this.bonusBase >= 0) {
+		if(this.bonusBase) {
 			degats += Number(this.bonusBase);
 		}
 
